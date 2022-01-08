@@ -2,7 +2,7 @@
   padding: 0 2rem;
 }
 .heading {
-  @apply text-center text-6xl font-bold text-red-600;
+  @apply text-center text-6xl font-bold text-nmr-red;
 }
 
 .sub {

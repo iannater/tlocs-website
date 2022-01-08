@@ -1,16 +1,24 @@
 import React from "react";
+import Tab from "./tab";
+
 // import styles from "../styles/Home.module.css";
 
 const hotdog = () => {
   return (
     <div className="container mx-auto py-10">
       <div className="pb-10">
-        <h1 className="heading">Con Todo</h1>
+        <h1 className="heading font-nmr">CON TODO</h1>
         <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
       </div>
       <div className="grid grid-cols-2 ">
         <div className="bg-red-500 h-[200px]">picture</div>
-        <div className="bg-blue-500">text</div>
+        <div className=" flex flex-col space-y-2 pt-4">
+          <Tab />
+          <Tab />
+          <Tab />
+          <Tab />
+          <Tab />
+        </div>
       </div>
     </div>
   );
