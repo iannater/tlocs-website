@@ -18,6 +18,12 @@ const hotdog = () => {
           <Tab />
           <Tab />
           <Tab />
+          <div className="text-center pr-10">
+            <button className="rounded-md bg-nmr-black text-white font-nmr px-2 py-2">
+              {" "}
+              View Entire Menu
+            </button>
+          </div>
         </div>
       </div>
     </div>
