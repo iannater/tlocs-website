@@ -1,6 +1,13 @@
 .container {
   padding: 0 2rem;
 }
+.heading {
+  @apply text-center text-6xl font-bold text-red-600;
+}
+
+.sub {
+  @apply text-red-600 text-center;
+}
 
 .main {
   min-height: 100vh;
@@ -13,19 +20,7 @@
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  @apply flex;
 }
 
 .title a {

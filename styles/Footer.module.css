@@ -1,0 +1,15 @@
+.title {
+  @apply text-red-600 font-bold pb-5;
+}
+
+.content {
+  @apply text-white font-bold;
+}
+
+.items {
+  @apply flex justify-center items-start flex-col;
+}
+
+.footer {
+  @apply p-10 grid grid-cols-5 min-h-[100px] bg-footer;
+}
