@@ -5,10 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        nmr: ['"Shrikhand"', "cursive"],
+      },
       backgroundImage: {
         footer: "url('../assets/footer.png')",
         redBg: "url('../assets/red-bg.png')",
         yellowBg: "url('../assets/brown-paper-texture-background.png')",
+        whiteLogo: "url('../assets/white-logo.png')",
       },
       colors: {
         nmr: {

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NavItem = (props) => (
   <li>
     <a
@@ -13,11 +15,11 @@ const navbar = () => (
   <div>
     <nav className="flex justify-between py-4 px-3 ">
       <div className="flex items-center ">
-        <div className="inline-block h-6 w-6 rounded-full px-3 py-2 bg-gray-400" />
-        {/* <span className="ml-2"></span> */}
+        <div className="inline-block h-6 w-6 rounded-full px-3 py-2 " />
+        <Image src="/white-logo.png" alt="Logo" width={69} height={69} />
       </div>
       <div>
-        <ul className="flex space-x-2">
+        <ul className="flex space-x-2 pt-5 font-nmr">
           <NavItem href="/" text="Home" />
           <NavItem href="/about" text="About" />
           <NavItem href="/catering" text="Catering" />
