@@ -13,7 +13,7 @@ const NavItem = (props) => (
 
 const navbar = () => (
   <div>
-    <nav className="flex justify-between py-4 px-3 ">
+    <nav className="flex justify-between py-4 px-3 bg-redBg">
       <div className="flex items-center ">
         <div className="inline-block h-6 w-6 rounded-full px-3 py-2 " />
         <Image src="/white-logo.png" alt="Logo" width={69} height={69} />{" "}

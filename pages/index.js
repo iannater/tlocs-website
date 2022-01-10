@@ -18,17 +18,12 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className="bg-redBg h-screen w-full ">
-        <div>
-          <Navbar />
-        </div>
+      <div className="bg-redBg h-screen w-full -mt-40 ">
         <button>click here</button>
       </div>
       <Hotdog />
 
       <Menu />
-
-      <Footer />
     </div>
   );
 }
