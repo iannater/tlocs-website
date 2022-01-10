@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         />
       </Head>
       <Navbar />
-      <main className="">{children}</main>
+      <main className="min-h-screen bg-yellowBg">{children}</main>
       <Footer />
     </>
   );
