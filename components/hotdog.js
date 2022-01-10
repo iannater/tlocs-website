@@ -6,7 +6,7 @@ import Tab from "./tab";
 const hotdog = () => {
   return (
     <div className="container mx-auto py-10">
-      <div className="pb-10">
+      <div className="py-10">
         <h1 className="heading font-nmr">CON TODO</h1>
         <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
       </div>

@@ -26,9 +26,8 @@ export default function Home() {
       </div>
       <Hotdog />
 
-      <main className={styles.main}>
-        <Menu />
-      </main>
+      <Menu />
+
       <Footer />
     </div>
   );
