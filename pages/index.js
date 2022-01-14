@@ -33,10 +33,13 @@ export async function getStaticProps() {
       query: gql`
         query {
           menus {
+            nameOfSection
             id
-            itemName
-            description
-            price
+            items {
+              itemName
+              price
+              description
+            }
           }
         }
       `,
@@ -44,7 +47,7 @@ export async function getStaticProps() {
     .catch((err) => {
       return { data: "There was an error!" };
     });
-  // console.log(evnts);
+  // console.log(menus);
   return {
     props: {
       menus,
