@@ -21,77 +21,35 @@ const menu = (props) => {
           <div>
             <div
               onClick={() => setClicked(!clicked)}
-              className="flex justify-center items-center pr-4 "
+              className="flex justify-center items-center pr-4"
             >
               <Image src="/arrow.png" alt="arrow" width={30} height={50} />
             </div>
           </div>
         </div>
 
-        <table>
+        <section>
           {clicked === false ? (
             <div>
               {props.menus.map((menu, i) => (
-                <tbody>
-                  <tr>
-                    <td scope="row" className="pb-4 text-lg font-semibold">
-                      {/* {clicked === true ? <h1>hi</h1> : <h1>bye</h1>} */}
+                <div key={i} className="pr-40">
+                  <div className="flex justify-between">
+                    <div scope="row" className="pb-2 text-xl font-semibold">
                       {menu.itemName}
-                    </td>
-                    <td> ${menu.price}</td>
-                  </tr>
-                  <tr>
-                    <td scope="row" className="pb-8">
+                    </div>
+                    <div className="text-xl font-semibold"> ${menu.price}</div>
+                  </div>
+                  <div className="border-2 border-solid border-white mb-2"></div>
+                  <div>
+                    <div scope="row" className="pb-8 font-semibold">
                       {menu.description}
-                    </td>
-                  </tr>
-                </tbody>
+                    </div>
+                  </div>
+                </div>
               ))}
-              {/* <tbody>
-                <tr>
-                  <td scope="row" className="pb-4">
-                    Yaqui Dog
-                  </td>
-                  <td> $7.25</td>
-                </tr>
-                <tr>
-                  <td scope="row" className="pb-8">
-                    Bacon wrapped hot dog, pinto beans, sauteed onions, carne
-                    asada, monterey jack cheese, & jalapeno sauce.
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td scope="row" className="pb-4">
-                    Yaqui Dog
-                  </td>
-                  <td> $7.25</td>
-                </tr>
-                <tr>
-                  <td scope="row" className="pb-8">
-                    Bacon wrapped hot dog, pinto beans, sauteed onions, carne
-                    asada, monterey jack cheese, & jalapeno sauce.
-                  </td>
-                </tr>
-              </tbody>
-              <tr>
-                <th>Upgrade Your Hot Dog</th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>Hewbrew National</td>
-                  <td>$1</td>
-                </tr>
-
-                <tr>
-                  <td>Hewbrew National</td>
-                  <td className="divide-x-2">$1</td>
-                </tr>
-              </tbody> */}
             </div>
           ) : null}
-        </table>
+        </section>
       </div>
     </div>
   );
