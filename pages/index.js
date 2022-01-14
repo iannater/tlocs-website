@@ -2,11 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Hotdog from "../components/hotdog";
 import Menu from "../components/menu";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import styles from "../styles/Home.module.css";
+import { gql } from "@apollo/client";
+import client from "../apolloClient";
 
-export default function Home() {
+export default function Home({ menus }) {
   return (
     <div className="bg-yellowBg">
       <Head>
@@ -23,7 +22,32 @@ export default function Home() {
       </div>
       <Hotdog />
 
-      <Menu />
+      <Menu {...menus} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const { data: menus } = await client
+    .query({
+      query: gql`
+        query {
+          menus {
+            id
+            itemName
+            description
+            price
+          }
+        }
+      `,
+    })
+    .catch((err) => {
+      return { data: "There was an error!" };
+    });
+  // console.log(evnts);
+  return {
+    props: {
+      menus,
+    },
+  };
 }

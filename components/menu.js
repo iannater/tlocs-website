@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
-const menu = () => {
+const menu = (props) => {
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -31,22 +31,23 @@ const menu = () => {
         <table>
           {clicked === false ? (
             <div>
-              <tbody>
-                <tr>
-                  <td scope="row" className="pb-4 text-lg font-semibold">
-                    {/* {clicked === true ? <h1>hi</h1> : <h1>bye</h1>} */}
-                    Sonoran Hot Dog
-                  </td>
-                  <td> $6.50</td>
-                </tr>
-                <tr>
-                  <td scope="row" className="pb-8">
-                    Bacon wrapped hot dog, pinto beans, sauteed onions, diced
-                    onions, diced tomatoes, mayo, mustard, & jalapeno sauce.
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
+              {props.menus.map((menu, i) => (
+                <tbody>
+                  <tr>
+                    <td scope="row" className="pb-4 text-lg font-semibold">
+                      {/* {clicked === true ? <h1>hi</h1> : <h1>bye</h1>} */}
+                      {menu.itemName}
+                    </td>
+                    <td> ${menu.price}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" className="pb-8">
+                      {menu.description}
+                    </td>
+                  </tr>
+                </tbody>
+              ))}
+              {/* <tbody>
                 <tr>
                   <td scope="row" className="pb-4">
                     Yaqui Dog
@@ -87,7 +88,7 @@ const menu = () => {
                   <td>Hewbrew National</td>
                   <td className="divide-x-2">$1</td>
                 </tr>
-              </tbody>
+              </tbody> */}
             </div>
           ) : null}
         </table>
