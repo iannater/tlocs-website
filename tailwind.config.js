@@ -18,6 +18,8 @@ module.exports = {
         nmr: {
           black: "#333333",
           red: "#C50800",
+          redTxt: "#D9453F",
+          lightBrown: "#F1E8DC",
         },
       },
     },

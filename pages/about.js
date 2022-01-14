@@ -1,9 +1,14 @@
 import React from "react";
+import AboutHero from "../components/aboutHero";
+import MeetSection from "../components/meetSection";
 
 const about = () => {
   return (
     <div>
-      <h1>hello</h1>
+      <div className="bg-redBg h-screen w-full -mt-40 pt-40 ">
+        <AboutHero />
+      </div>
+      <MeetSection />
     </div>
   );
 };
