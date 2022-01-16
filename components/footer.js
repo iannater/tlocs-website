@@ -14,10 +14,10 @@ const footer = () => {
           >
             <span className="">
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
+                src="/blklogo.png"
+                alt="Dark Logo"
+                width={100}
+                height={100}
               />
             </span>
           </a>
