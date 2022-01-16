@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Tab from "./tab";
 
@@ -11,7 +12,9 @@ const hotdog = () => {
         <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
       </div>
       <div className="grid grid-cols-2 ">
-        <div className="bg-red-500 h-[200px]">picture</div>
+        <div className="bg-red-500">
+          <Image src="/ingredients.png" width="500" height="1000" />
+        </div>
         <div className=" flex flex-col space-y-2 pt-4">
           <Tab />
           <Tab />

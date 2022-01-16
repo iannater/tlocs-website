@@ -17,8 +17,10 @@ export default function Home({ menus }) {
           rel="stylesheet"
         />
       </Head>
-      <div className="bg-redBg h-screen w-full -mt-40 ">
-        <button>click here</button>
+      <div className="bg-redBg min-h-screen w-full  text-center text-white flex flex-col justify-center items-center font-nmr font-bold">
+        <h3 className="text-xl">T-Loc's World Famous</h3>
+        <h1 className="text-9xl">SONORAN</h1>
+        <h2 className="text-4xl">HOT DOGS</h2>
       </div>
       <Hotdog />
 
