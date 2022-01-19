@@ -9,7 +9,7 @@ export default function Home({ menus }) {
   return (
     <div>
       <NavbarHome />
-      <div className="bg-yellowBg bg-no-repeat">
+      <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
         <Hotdog />
         <Menu {...menus} />
       </div>

@@ -16,14 +16,14 @@ const Menu = (props) => {
     <div className="py-10">
       <div className="text-center">
         <h1 className="heading font-nmr">Menu</h1>
-        <p className="font-semibold text-lg text-nmr-red pb-20">
+        <p className="font-semibold md:text-lg text-nmr-red pb-5 md:pb-20">
           Hot Dogs, Burritos, Tacos y mas Estilo Sonora
         </p>
       </div>
       {props.menus.map((menu, index) => (
         <div
           key={index}
-          className="py-10 px-20 mb-10 bg-redBg w-5/6 rounded-md text-white"
+          className="md:py-10 p-10 md:px-20 mb-10 bg-redBg md:w-5/6 md:rounded-md text-white"
         >
           <div className="flex justify-between ">
             <h1 className="flex justify-start font-nmr text-4xl pb-3">
@@ -45,8 +45,8 @@ const Menu = (props) => {
             <section key={i}>
               {clicked === index ? (
                 <div>
-                  <div className="pr-40">
-                    <div className="flex justify-between">
+                  <div className="md:pr-40">
+                    <div className="flex md:justify-between">
                       <div scope="row" className="pb-2 text-xl font-semibold">
                         {item.itemName}
                       </div>
