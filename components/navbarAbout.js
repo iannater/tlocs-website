@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HomeHero from "./homeHero";
+import AboutHero from "./aboutHero";
 
 const NavItem = (props) => (
   <li>
@@ -29,6 +29,7 @@ const navbar = () => (
         </ul>
       </div>
     </nav>
+    <AboutHero />
   </div>
 );
 

@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Navbar from "../components/navbar";
 
 const catering = () => {
   return (
     <div>
-      <div className="px-20 lg:px-40 py-20">
+      <Navbar />
+      <div className="px-20 lg:px-40 py-20 bg-yellowBg">
         <div className="grid grid-cols-2 ">
           <div>
             <h2 className="font-nmr font-bold text-2xl">Welcome to</h2>

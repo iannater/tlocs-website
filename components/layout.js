@@ -14,9 +14,11 @@ export default function Layout({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <Navbar className="-mb-40" />
-      <main className="min-h-screen bg-yellowBg">{children}</main>
-      <Footer />
+      <div>
+        {/* <Navbar /> */}
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </div>
     </>
   );
 }

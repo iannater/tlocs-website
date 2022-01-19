@@ -29,6 +29,7 @@ const navbar = () => (
         </ul>
       </div>
     </nav>
+    <HomeHero />
   </div>
 );
 
