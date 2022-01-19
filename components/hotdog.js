@@ -6,21 +6,21 @@ import Tab from "./tab";
 
 const hotdog = () => {
   return (
-    <div className="container mx-auto py-10">
+    <div className="container py-10">
       <div className="py-10">
         <h1 className="heading font-nmr">CON TODO</h1>
         <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
       </div>
       <div className="grid grid-cols-2 ">
-        <div className="bg-red-500">
+        <div>
           <Image
             src="/ingredients.png"
-            width="500"
-            height="1000"
+            width="700"
+            height="1200"
             alt="image of hotdog"
           />
         </div>
-        <div className=" flex flex-col space-y-2 pt-4">
+        <div className=" flex flex-col justify-between py-10 item-center">
           <Tab />
           <Tab />
           <Tab />
