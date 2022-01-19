@@ -13,11 +13,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 * {
   box-sizing: border-box;
-} */
+}
 
 .heading {
   @apply text-center text-6xl font-bold text-red-600;

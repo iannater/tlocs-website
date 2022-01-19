@@ -9,10 +9,13 @@ module.exports = {
         nmr: ['"Shrikhand"', "cursive"],
       },
       backgroundImage: {
-        footer: "url('../assets/footer.png')",
-        redBg: "url('../assets/red-bg.png')",
-        yellowBg: "url('../assets/brown-paper-texture-background.png')",
-        whiteLogo: "url('../assets/white-logo.png')",
+        footer: "url('/images/footer.png')",
+        redBg: "url('/images/red-bg.png')",
+        yellowBg: "url('/images/brown-paper-texture-background.png')",
+        whiteLogo: "url('/images/white-logo.png')",
+        aboutUs: "url('/images/about-us.png')",
+        dog: "url('/images/dog.png')",
+        carteringCard: "url('/images/catering-card.png')",
       },
       colors: {
         nmr: {

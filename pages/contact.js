@@ -9,8 +9,8 @@ const contact = () => {
 
       <div className="bg-yellowBg min-h-screen">
         {/* Center box */}
-        <div className="grid grid-cols-2 rounded-md px-20 lg:px-40 pt-20">
-          <div className="bg-redBg flex flex-col rounded-l-md p-2 justify-center items-center ">
+        <div className="grid lg:grid-cols-2 rounded-md px-5 md:px-40 pt-20">
+          <div className="bg-redBg flex flex-col rounded-md lg:rounded-l-md lg:rounded-r-none p-10 lg:p-2 justify-center items-center">
             <div className="text-[#F1E8DC] text-center  lg:pb-10">
               <h1 className=" text-3xl lg:text-6xl font-nmr">
                 Let&apos;s Talk
@@ -41,30 +41,42 @@ const contact = () => {
               </form>
             </div>
           </div>
-          <div>
+          <div className="pt-6 lg:pt-0 text-center lg:text-left">
             <Image src="/gmap.png" alt="google map" width={520} height={552} />
           </div>
         </div>
-        <div className="grid grid-cols-3 px-20 lg:px-40 pt-20 text-center">
-          <div>
+        <div className="grid md:grid-cols-3 px-14 py-20 md:px-40 md:text-center">
+          <div className="grid grid-cols-2  md:grid-cols-1">
             <div>
               <Image src="/phone.png" alt="phone icon" width={59} height={59} />
             </div>
-            <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
-              Phone:
-            </h1>
-            <h2 className="text-nmr-red font-semibold">(XXX) XXX - XXXX</h2>
-          </div>
-          <div>
+
             <div>
-              <Image src="/email.png" alt="email icon" width={59} height={59} />
+              <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
+                Phone:
+              </h1>
+              <h2 className="text-nmr-red font-semibold">(XXX) XXX - XXXX</h2>
             </div>
-            <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
-              Email:
-            </h1>
-            <h2 className="text-nmr-red font-semibold">520tlocs@gmail.com</h2>
           </div>
-          <div>
+          <div className="grid grid-cols-2 md:grid-cols-1">
+            <div>
+              <Image
+                src="/images/email.png"
+                alt="email icon"
+                width={59}
+                height={59}
+              />
+            </div>
+            <div>
+              <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
+                Email:
+              </h1>
+              <h2 className="text-nmr-red font-semibold overflow-wrap">
+                520tlocs@gmail.com
+              </h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-1">
             <div>
               <Image
                 src="/address.png"
@@ -73,13 +85,15 @@ const contact = () => {
                 height={59}
               />
             </div>
-            <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
-              address:
-            </h1>
-            <h2 className="text-nmr-red font-semibold">
-              5000 Burnet Rd,
-              <br /> Austin, Tx 78756
-            </h2>
+            <div>
+              <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
+                address:
+              </h1>
+              <h2 className="text-nmr-red font-semibold">
+                5000 Burnet Rd,
+                <br /> Austin, Tx 78756
+              </h2>
+            </div>
           </div>
         </div>
       </div>

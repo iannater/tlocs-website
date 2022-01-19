@@ -4,8 +4,11 @@ import NavbarAbout from "../components/navbarAbout";
 
 const about = () => {
   return (
-    <div>
+    <div className="bg-yellowBg ">
       <NavbarAbout />
+      <div className="bg-aboutUs min-h-screen bg-no-repeat bg-cover bg-center w-full ">
+        {" "}
+      </div>
       <MeetSection />
     </div>
   );
