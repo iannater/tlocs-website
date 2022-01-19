@@ -12,7 +12,9 @@ const contact = () => {
         <div className="grid grid-cols-2 rounded-md px-20 lg:px-40 pt-20">
           <div className="bg-redBg flex flex-col rounded-l-md p-2 justify-center items-center ">
             <div className="text-[#F1E8DC] text-center  lg:pb-10">
-              <h1 className=" text-3xl lg:text-6xl font-nmr">Let's Talk</h1>
+              <h1 className=" text-3xl lg:text-6xl font-nmr">
+                Let&apos;s Talk
+              </h1>
               <p className=" text-lg lg:text-2xl">
                 We-d love to hear from you!
               </p>

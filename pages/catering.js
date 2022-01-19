@@ -11,11 +11,11 @@ const catering = () => {
           <div>
             <h2 className="font-nmr font-bold text-2xl">Welcome to</h2>
             <h1 className="text-[#D9453F] text-4xl font-bold font-nmr pb-2">
-              T-Loc's Catering
+              T-Loc&apos;s Catering
             </h1>
             <p className="font-semibold pb-10">
-              Want to spread the love and show everyone what a T-Loc’s hot dog
-              is all about? We now cater for any sized party and any event.
+              Want to spread the love and show everyone what a T-Loc&apos;s hot
+              dog is all about? We now cater for any sized party and any event.
             </p>
             <button className="bg-[#D9453F] text-[#F1E8DC] rounded-md px-5 py-2 text-lg font-bold font-nmr">
               Book Now

@@ -7,7 +7,7 @@ const meetSection = () => {
       <div className="text-center">
         <h1 className="text-4xl font-nmr font-bold text-nmr-red pb-10">
           {" "}
-          Meet the chef's
+          Meet the chef&apos;s
         </h1>
       </div>
       <div className="bg-redBg rounded-md flex ">

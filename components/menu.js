@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
-const menu = (props) => {
+const Menu = (props) => {
   const [clicked, setClicked] = useState(false);
 
   const toggle = (index) => {
@@ -72,4 +72,4 @@ const menu = (props) => {
   );
 };
 
-export default menu;
+export default Menu;

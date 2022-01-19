@@ -13,7 +13,12 @@ const hotdog = () => {
       </div>
       <div className="grid grid-cols-2 ">
         <div className="bg-red-500">
-          <Image src="/ingredients.png" width="500" height="1000" />
+          <Image
+            src="/ingredients.png"
+            width="500"
+            height="1000"
+            alt="image of hotdog"
+          />
         </div>
         <div className=" flex flex-col space-y-2 pt-4">
           <Tab />

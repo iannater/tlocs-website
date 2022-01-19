@@ -10,6 +10,7 @@ const aboutHero = () => {
       </div>
       <div className="text-center">
         <Image
+          alt="image"
           src="/vid.png"
           width="800"
           height="400"
