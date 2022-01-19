@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import AboutHero from "./aboutHero";
 
 const NavItem = (props) => (
@@ -17,13 +18,14 @@ const navbar = () => (
     <nav className="flex justify-between py-4 px-3">
       <div className="flex items-center ">
         <div className="inline-block h-6 w-6 rounded-full px-3 py-2 " />
-        <a href="/">
-          <Image src="/white-logo.png" alt="Logo" width={69} height={69} />{" "}
-        </a>
+        <Link href="/">
+          <a>
+            <Image src="/white-logo.png" alt="Logo" width={69} height={69} />{" "}
+          </a>
+        </Link>
       </div>
       <div>
         <ul className="flex space-x-2 pt-5 font-nmr">
-          <NavItem href="/" text="Home" />
           <NavItem href="/about" text="About" />
           <NavItem href="/catering" text="Catering" />
           <NavItem href="/contact" text="Contact" />
