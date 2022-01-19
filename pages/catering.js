@@ -6,15 +6,16 @@ const catering = () => {
   return (
     <div>
       <Navbar />
-      <div className=" py-20 bg-yellowBg">
-        <div className=" bg-dog bg-contain bg-no-repeat bg-right -mr-56 h-96">
-          <div className="grid grid-cols-2 px-20 lg:px-40">
+
+      <div className="pt-20 md:py-20 bg-yellowBg">
+        <div className="md:bg-dog md:bg-contain md:bg-no-repeat md:bg-right md:-mr-56 md:h-96">
+          <div className="grid md:grid-cols-2 px-10 md:px-40 text-center md:text-left">
             <div>
               <h2 className="font-nmr font-bold text-2xl">Welcome to</h2>
               <h1 className="text-[#D9453F] text-4xl font-bold font-nmr pb-2">
                 T-Loc&apos;s Catering
               </h1>
-              <p className="font-semibold pb-10">
+              <p className="font-semibold pb-5 md:pb-10">
                 Want to spread the love and show everyone what a T-Loc&apos;s
                 hot dog is all about? We now cater for any sized party and any
                 event.
@@ -23,10 +24,11 @@ const catering = () => {
                 Book Now
               </button>
             </div>
-            <div className=" "></div>
+            <div></div>
           </div>
         </div>
-        <div className="grid grid-cols-3 text-center py-20 px-20 lg:px-40">
+
+        <div className="grid md:grid-cols-3 text-center py-20 px-10 lg:px-40 gap-6 md:gap-0">
           <div>
             <div className="pb-4">
               <Image src="/phone.png" alt="phone icon" width={59} height={59} />
@@ -65,14 +67,14 @@ const catering = () => {
           </div>
         </div>
 
-        <div className=" px-20 lg:px-40">
-          <div className="bg-carteringCard p-10 rounded-lg shadow-lg ">
-            <div className="pb-4 w-1/2 text-center">
+        <div className="md:px-40">
+          <div className="bg-redBg p-10 md:rounded-lg shadow-lg ">
+            <div className="pb-4 md:w-1/2 text-center">
               <h1 className="font-nmr text-4xl font-bold text-nmr-lightBrown">
                 Thinking of Catering?
               </h1>
             </div>
-            <form className="w-1/2 text-center">
+            <form className="md:w-1/2 text-center">
               <div className="w-full space-y-5 p-2">
                 <input
                   placeholder="name"
