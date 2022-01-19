@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
-const menu = () => {
+const Menu = (props) => {
   const [clicked, setClicked] = useState(false);
+
+  const toggle = (index) => {
+    if (clicked === index) {
+      return setClicked(null);
+    }
+    setClicked(index);
+  };
 
   return (
     <div className="py-10">
@@ -13,87 +20,56 @@ const menu = () => {
           Hot Dogs, Burritos, Tacos y mas Estilo Sonora
         </p>
       </div>
-      <div className="py-10 px-20 mb-10 bg-redBg w-5/6 rounded-md text-white">
-        <div className="flex justify-between ">
-          <h1 className="flex justify-start font-nmr text-4xl pb-3">
-            Hot Dogs
-          </h1>
-          <div>
-            <div
-              onClick={() => setClicked(!clicked)}
-              className="flex justify-center items-center pr-4 "
-            >
-              <Image src="/arrow.png" alt="arrow" width={30} height={50} />
+      {props.menus.map((menu, index) => (
+        <div
+          key={index}
+          className="py-10 px-20 mb-10 bg-redBg w-5/6 rounded-md text-white"
+        >
+          <div className="flex justify-between ">
+            <h1 className="flex justify-start font-nmr text-4xl pb-3">
+              {menu.nameOfSection}
+            </h1>
+
+            <div>
+              <div
+                onClick={() => toggle(index)}
+                key={index}
+                className="flex justify-center items-center pr-4"
+              >
+                <Image src="/arrow.png" alt="arrow" width={30} height={50} />
+              </div>
             </div>
           </div>
+
+          {menu.items.map((item, i) => (
+            <section key={i}>
+              {clicked === index ? (
+                <div>
+                  <div className="pr-40">
+                    <div className="flex justify-between">
+                      <div scope="row" className="pb-2 text-xl font-semibold">
+                        {item.itemName}
+                      </div>
+                      <div className="text-xl font-semibold">
+                        {" "}
+                        ${item.price}
+                      </div>
+                    </div>
+                    <div className="border-2 border-solid border-white mb-2"></div>
+                    <div>
+                      <div scope="row" className="pb-8 font-semibold">
+                        {item.description}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+            </section>
+          ))}
         </div>
-
-        <table>
-          {clicked === false ? (
-            <div>
-              <tbody>
-                <tr>
-                  <td scope="row" className="pb-4 text-lg font-semibold">
-                    {/* {clicked === true ? <h1>hi</h1> : <h1>bye</h1>} */}
-                    Sonoran Hot Dog
-                  </td>
-                  <td> $6.50</td>
-                </tr>
-                <tr>
-                  <td scope="row" className="pb-8">
-                    Bacon wrapped hot dog, pinto beans, sauteed onions, diced
-                    onions, diced tomatoes, mayo, mustard, & jalapeno sauce.
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td scope="row" className="pb-4">
-                    Yaqui Dog
-                  </td>
-                  <td> $7.25</td>
-                </tr>
-                <tr>
-                  <td scope="row" className="pb-8">
-                    Bacon wrapped hot dog, pinto beans, sauteed onions, carne
-                    asada, monterey jack cheese, & jalapeno sauce.
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td scope="row" className="pb-4">
-                    Yaqui Dog
-                  </td>
-                  <td> $7.25</td>
-                </tr>
-                <tr>
-                  <td scope="row" className="pb-8">
-                    Bacon wrapped hot dog, pinto beans, sauteed onions, carne
-                    asada, monterey jack cheese, & jalapeno sauce.
-                  </td>
-                </tr>
-              </tbody>
-              <tr>
-                <th>Upgrade Your Hot Dog</th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>Hewbrew National</td>
-                  <td>$1</td>
-                </tr>
-
-                <tr>
-                  <td>Hewbrew National</td>
-                  <td className="divide-x-2">$1</td>
-                </tr>
-              </tbody>
-            </div>
-          ) : null}
-        </table>
-      </div>
+      ))}
     </div>
   );
 };
 
-export default menu;
+export default Menu;

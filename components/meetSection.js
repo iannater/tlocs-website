@@ -7,13 +7,18 @@ const meetSection = () => {
       <div className="text-center">
         <h1 className="text-4xl font-nmr font-bold text-nmr-red pb-10">
           {" "}
-          Meet the chef's
+          Meet the chef&apos;s
         </h1>
       </div>
       <div className="bg-redBg rounded-md flex ">
         {/* pic */}
         <div className="w-1/3 flex justify-center ">
-          <Image src="/miguel.png" width={1000} height={1200} />
+          <Image
+            src="/miguel.png"
+            width={1000}
+            height={1200}
+            alt="image of meguel"
+          />
         </div>
         {/* content */}
         <div className="text-white p-10 w-2/3 flex flex-col">
