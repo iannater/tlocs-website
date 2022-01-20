@@ -50,7 +50,7 @@ const hotdog = () => {
     gsap.fromTo(
       "#boxes",
       {
-        x: -450,
+        xPercent: -72,
       },
       {
         scrollTrigger: {
@@ -61,7 +61,7 @@ const hotdog = () => {
           markers: false,
           scrub: true,
         },
-        x: -10,
+        xPercent: -2,
         stagger: 0.2,
         duration: 1,
       }
@@ -69,7 +69,7 @@ const hotdog = () => {
     return;
   });
   return (
-    <div className="w-full">
+    <div className="w-full 2xl:container">
       <div className="md:py-10">
         <div className="py-10">
           <h1 className="heading font-nmr">CON TODO</h1>
@@ -89,7 +89,7 @@ const hotdog = () => {
             <div
               id="boxesTrigger"
               ref={(el) => (tabRef = el)}
-              className="grid grid-cols-1 item-center lg:py-10"
+              className="grid grid-cols-1 item-center lg:py-10 "
             >
               {ingredients.map((item, i) => (
                 <Tab
