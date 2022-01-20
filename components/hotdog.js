@@ -37,15 +37,15 @@ const ingredients = [
   },
 ];
 
-const hotdog = () => {
-  const tabRef = useRef(null);
+const Hotdog = () => {
+  // const tabRef = useRef(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
     }
-    const firstItem = tabRef.children[0];
-    const sndItem = tabRef.children[1];
-    console.log(firstItem);
+    // const firstItem = tabRef.children[0];
+    // const sndItem = tabRef.children[1];
+    // console.log(firstItem);
 
     gsap.fromTo(
       "#boxes",
@@ -83,12 +83,12 @@ const hotdog = () => {
                 width="446"
                 height="600"
                 layout="responsive"
-                alt="image of hotdog"
+                alt="image of Hotdog"
               />
             </div>
             <div
               id="boxesTrigger"
-              ref={(el) => (tabRef = el)}
+              // ref={(el) => (tabRef = el)}
               className="grid grid-cols-1 item-center lg:py-10 "
             >
               {ingredients.map((item, i) => (
@@ -112,4 +112,4 @@ const hotdog = () => {
   );
 };
 
-export default hotdog;
+export default Hotdog;
