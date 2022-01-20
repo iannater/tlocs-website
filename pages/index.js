@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Hotdog from "../components/hotdog";
 import Menu from "../components/menu";
 import { gql } from "@apollo/client";
