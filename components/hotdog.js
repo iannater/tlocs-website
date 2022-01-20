@@ -69,33 +69,42 @@ const hotdog = () => {
     return;
   });
   return (
-    <div className="hidden md:block container py-10">
-      <div className="py-10">
-        <h1 className="heading font-nmr">CON TODO</h1>
-        <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
-      </div>
-      <div className="grid grid-cols-2 ">
-        <div className="z-10">
-          <Image
-            src="/ingredients.png"
-            width="700"
-            height="1200"
-            alt="image of hotdog"
-          />
+    <div className="w-full">
+      <div className="md:py-10">
+        <div className="py-10">
+          <h1 className="heading font-nmr">CON TODO</h1>
+          <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
         </div>
-        <div
-          id="boxesTrigger"
-          ref={(el) => (tabRef = el)}
-          className="flex flex-col justify-between py-10 item-center"
-        >
-          {ingredients.map((item, i) => (
-            <Tab key={i} title={item.title} description={item.description} />
-          ))}
-          <div className="text-center pr-10">
-            <button className="rounded-md bg-nmr-black text-white font-nmr px-2 py-2">
-              {" "}
-              View Entire Menu
-            </button>
+        <div className="hidden md:block ">
+          <div className="grid grid-cols-2">
+            <div className="z-10">
+              <Image
+                src="/ingredients.png"
+                width="446"
+                height="600"
+                layout="responsive"
+                alt="image of hotdog"
+              />
+            </div>
+            <div
+              id="boxesTrigger"
+              ref={(el) => (tabRef = el)}
+              className="grid grid-cols-1 item-center lg:py-10"
+            >
+              {ingredients.map((item, i) => (
+                <Tab
+                  key={i}
+                  title={item.title}
+                  description={item.description}
+                />
+              ))}
+              <div className="text-center pr-10 pt-3 mlg:p-0">
+                <button className="rounded-md bg-nmr-black text-white font-nmr p-1 md:px-2 md:py-2 xl:p-4">
+                  {" "}
+                  View Entire Menu
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
