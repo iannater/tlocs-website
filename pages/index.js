@@ -2,13 +2,14 @@ import Hotdog from "../components/hotdog";
 import Menu from "../components/menu";
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
-import NavbarHome from "../components/navbarHome";
+import HomeHero from "../components/homeHero";
+import Layout from "../components/layout";
 
 export default function Home({ menus }) {
   return (
     <div>
-      <NavbarHome />
       <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
+        <HomeHero />
         <Hotdog />
         <Menu {...menus} />
       </div>
@@ -43,3 +44,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+Home.Layout = Layout;

@@ -1,11 +1,12 @@
 import React from "react";
+import AboutHero from "../components/aboutHero";
+import Layout from "../components/layout";
 import MeetSection from "../components/meetSection";
-import NavbarAbout from "../components/navbarAbout";
 
 const about = () => {
   return (
-    <div className="bg-yellowBg ">
-      <NavbarAbout />
+    <div className="bg-yellowBg">
+      <AboutHero />
       <div className="bg-aboutUs min-h-screen bg-no-repeat bg-cover bg-center w-full ">
         {" "}
       </div>
@@ -13,5 +14,7 @@ const about = () => {
     </div>
   );
 };
+
+about.Layout = Layout;
 
 export default about;

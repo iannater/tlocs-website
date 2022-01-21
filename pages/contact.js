@@ -1,12 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Navbar from "../components/navbar";
+import Layout2 from "../components/layoutSd";
 
 const contact = () => {
   return (
     <div>
-      <Navbar />
-
       <div className="bg-yellowBg min-h-screen">
         {/* Center box */}
         <div className="grid lg:grid-cols-2 rounded-md px-5 md:px-40 pt-20">
@@ -100,5 +98,7 @@ const contact = () => {
     </div>
   );
 };
+
+contact.Layout = Layout2;
 
 export default contact;

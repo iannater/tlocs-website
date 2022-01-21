@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "../components/navbar";
+import Layout2 from "../components/layoutSd";
 
-const catering = () => {
+const Catering = () => {
   return (
     <div>
-      <Navbar />
-
       <div className="pt-20 md:py-20 bg-yellowBg">
         <div className="md:bg-dog md:bg-contain md:bg-no-repeat md:bg-right md:-mr-56 md:h-96">
           <div className="grid md:grid-cols-2 px-10 md:px-40 text-center md:text-left">
@@ -108,4 +106,6 @@ const catering = () => {
   );
 };
 
-export default catering;
+Catering.Layout = Layout2;
+
+export default Catering;

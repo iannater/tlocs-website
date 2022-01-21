@@ -3,7 +3,7 @@ import React from "react";
 
 const aboutHero = () => {
   return (
-    <div className="px-20 min-h-screen flex flex-col justify-center">
+    <div className="px-20 min-h-screen flex flex-col justify-center bg-redBg bg-cover bg-no-repeat">
       <div className="p-10 text-center  font-bold text-white">
         <h2 className="text-2xl pb-5">Adipisicing quis amet et</h2>
         <h1 className="text-7xl font-nmr">WHO WE ARE</h1>

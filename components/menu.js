@@ -22,10 +22,10 @@ const Menu = (props) => {
       </div>
       {props.menus.map((menu, index) => (
         <div key={index} className="flex flex-col md:odd:items-end">
-          <div className="bg-redBg text-white md:py-10 p-5 md:px-10 mb-10 md:w-5/6 md:rounded-md ">
+          <div className="bg-redBg text-white md:py-10 p-5 md:px-10 mb-10 md:w-5/6 md:rounded-md md:drop-shadow-2xl">
             {index % 2 ? (
-              <div className="flex flex-row justify-start">
-                <div className="flex items-center">
+              <div className="flex flex-row justify-start ">
+                <div className="flex items-center ">
                   <div
                     onClick={() => toggle(index)}
                     key={index}

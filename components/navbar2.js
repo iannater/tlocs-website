@@ -1,5 +1,4 @@
 import Image from "next/image";
-import HomeHero from "./homeHero";
 import Link from "next/link";
 
 const NavItem = (props) => (
@@ -14,7 +13,7 @@ const NavItem = (props) => (
 );
 
 const navbar = () => (
-  <div className="bg-redBg bg-no-repeat bg-cover min-h-screen">
+  <div className="w-full bg-no-repeat bg-cover bg-redBg">
     <nav className="flex justify-between py-4 px-3">
       <div className="flex items-center ">
         <div className="inline-block h-6 w-6 rounded-full px-3 py-2 " />
@@ -32,7 +31,6 @@ const navbar = () => (
         </ul>
       </div>
     </nav>
-    <HomeHero />
   </div>
 );
 

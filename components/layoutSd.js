@@ -1,8 +1,8 @@
 import Footer from "./footer";
 import Head from "next/head";
-import Navbar from "./navbar";
+import Navbar2 from "./navbar2";
 
-export default function Layout({ children }) {
+const Layout2 = ({ children }) => {
   return (
     <>
       <Head>
@@ -11,10 +11,11 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Navbar />
+        <Navbar2 />
         <main className="min-h-screen">{children}</main>
         <Footer />
       </div>
     </>
   );
-}
+};
+export default Layout2;
