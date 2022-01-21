@@ -79,7 +79,7 @@ const Hotdog = () => {
         {/* desktop  */}
         <div className="hidden md:block ">
           <div className="grid grid-cols-2">
-            <div className="z-10">
+            <div className="z-10 bg-black">
               <Image
                 src="/images/ingredients.png"
                 width="446"
