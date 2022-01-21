@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 import Tab from "./tab";
+import MobileTab from "./mobileTab";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -75,6 +76,7 @@ const Hotdog = () => {
           <h1 className="heading font-nmr">CON TODO</h1>
           <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
         </div>
+        {/* desktop  */}
         <div className="hidden md:block ">
           <div className="grid grid-cols-2">
             <div className="z-10">
@@ -104,6 +106,31 @@ const Hotdog = () => {
                   View Entire Menu
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* mobile */}
+        <div className=" md:hidden ">
+          <div className="grid grid-cols-1">
+            <div className="z-10">
+              <Image
+                src="/ingredients.png"
+                width="446"
+                height="600"
+                layout="responsive"
+                alt="image of Hotdog"
+              />
+            </div>
+            <div className="grid grid-cols-1 item-center lg:py-10 gap-2">
+              {ingredients.map((item, i) => (
+                <div className="flex justify-start even:justify-end pt-5  even:rounded-l-lg">
+                  <MobileTab
+                    key={i}
+                    title={item.title}
+                    description={item.description}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
