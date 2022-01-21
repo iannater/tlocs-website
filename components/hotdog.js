@@ -123,9 +123,11 @@ const Hotdog = () => {
             </div>
             <div className="grid grid-cols-1 item-center lg:py-10 gap-2">
               {ingredients.map((item, i) => (
-                <div className="flex justify-start even:justify-end pt-5  even:rounded-l-lg">
+                <div
+                  key={i}
+                  className="flex justify-start even:justify-end pt-5  even:rounded-l-lg"
+                >
                   <MobileTab
-                    key={i}
                     title={item.title}
                     description={item.description}
                   />
