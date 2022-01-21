@@ -81,11 +81,11 @@ const Hotdog = () => {
           <div className="grid grid-cols-2">
             <div className="z-10">
               <Image
-                src="/ingredients.png"
+                src="/images/ingredients.png"
                 width="446"
                 height="600"
                 layout="responsive"
-                alt="image of Hotdog"
+                alt="Image of Hotdog"
               />
             </div>
             <div
