@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { BsChevronDoubleDown } from "@react-icons/all-files/bs/BsChevronDoubleDown";
 
 const homeHero = () => {
   return (
@@ -19,10 +20,9 @@ const homeHero = () => {
           alt="hot dog"
         />
       </div> */}
-      <div className="text-white text-center flex justify-center self-end font-bold text-lg pb-5 ">
-        <div>
-          <h1 className="animate-bounce">Scroll to Discover More</h1>
-        </div>
+      <div className="text-white text-center flex flex-col items-center justify-center self-end font-bold text-lg pb-5 gap-3 ">
+        <h1>Scroll to Discover More</h1>
+        <BsChevronDoubleDown className="animate-bounce h-6 w-6" />
       </div>
     </div>
   );
