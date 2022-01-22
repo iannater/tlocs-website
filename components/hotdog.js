@@ -4,6 +4,7 @@ import Tab from "./tab";
 import MobileTab from "./mobileTab";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import hotdog from "../public/images/ingredients.png";
 
 const ingredients = [
   {
@@ -79,9 +80,10 @@ const Hotdog = () => {
         {/* desktop  */}
         <div className="hidden md:block ">
           <div className="grid grid-cols-2">
-            <div className="z-10 bg-black">
+            <div className="z-10">
               <Image
-                src="/images/ingredients.png"
+                // src="/images/.png"
+                src={hotdog}
                 width="446"
                 height="600"
                 layout="responsive"
