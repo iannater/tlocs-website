@@ -114,7 +114,7 @@ const Hotdog = () => {
           <div className="grid grid-cols-1">
             <div className="z-10">
               <Image
-                src="/ingredients.png"
+                src="/images/ingred.png"
                 width="446"
                 height="600"
                 layout="responsive"
