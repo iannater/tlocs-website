@@ -3,6 +3,24 @@ import Image from "next/image";
 import Layout2 from "../components/layoutSd";
 import Form from "../components/Form";
 
+const info = [
+  {
+    title: "Fresh Ingredients",
+    sub: "We use only the best ingrdients, making sure nothing is ever frozen and served perfect to you.",
+    icon: "/images/phone.png",
+  },
+  {
+    title: "World Class Chefs",
+    sub: "Professional trained, and at the top of their class. Leave it to Miguel and Zulma to leave you without words.",
+    icon: "/images/email.png",
+  },
+  {
+    title: "Attractive Selection",
+    sub: "We have something for everyone and all ages. Let us know any restrictions and we will make sure to accomodate.",
+    icon: "/images/address.png",
+  },
+];
+
 const Catering = () => {
   return (
     <div>
@@ -26,48 +44,24 @@ const Catering = () => {
         </div>
 
         <div className="grid md:grid-cols-3 text-center py-20 px-10 md:px-40 gap-6 md:gap-4">
-          <div className="flex flex-col items-center">
-            <div className="pb-4">
-              <Image src="/phone.png" alt="phone icon" width={59} height={59} />
+          {info.map((items, i) => (
+            <div key={i} className="flex flex-col items-center">
+              <div className="pb-4">
+                <Image
+                  src={items.icon}
+                  alt="phone icon"
+                  width={59}
+                  height={59}
+                />
+              </div>
+              <div className="max-w-xs">
+                <h1 className="font-nmr text-3xl sm:text-2xl lg:text-3xl text-nmr-redTxt">
+                  {items.title}
+                </h1>
+                <h2 className="font-semibold">{items.sub}</h2>
+              </div>
             </div>
-            <div className="max-w-xs">
-              <h1 className="font-nmr text-3xl sm:text-2xl lg:text-3xl text-nmr-redTxt">
-                Fresh Ingredients
-              </h1>
-              <h2 className="font-semibold">
-                We use only the best ingrdients, making sure nothing is ever
-                frozen and served perfect to you.
-              </h2>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="pb-4">
-              <Image src="/phone.png" alt="phone icon" width={59} height={59} />
-            </div>
-            <div className=" max-w-xs">
-              <h1 className="font-nmr text-3xl sm:text-2xl lg:text-3xl text-nmr-redTxt">
-                Fresh Ingredients
-              </h1>
-              <h2 className="font-semibold">
-                We use only the best ingrdients, making sure nothing is ever
-                frozen and served perfect to you.
-              </h2>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="pb-4">
-              <Image src="/phone.png" alt="phone icon" width={59} height={59} />
-            </div>
-            <div className=" max-w-xs">
-              <h1 className="font-nmr text-3xl sm:text-2xl lg:text-3xl text-nmr-redTxt">
-                Fresh Ingredients
-              </h1>
-              <h2 className="font-semibold">
-                We use only the best ingrdients, making sure nothing is ever
-                frozen and served perfect to you.
-              </h2>
-            </div>
-          </div>
+          ))}
         </div>
         <Form />
       </div>
