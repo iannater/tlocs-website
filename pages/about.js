@@ -24,7 +24,13 @@ const about = () => {
           </p>
         </div> */}
       <div className="pb-10 justify-center z-0 ">
-        <Image src="/images/about2.png" width={1440} height={1252} priority />
+        <Image
+          src="/images/about2.png"
+          width={1440}
+          height={1252}
+          priority
+          alt="Image with a map"
+        />
       </div>
       {/* </div> */}
       <MeetSection />

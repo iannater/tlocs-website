@@ -17,6 +17,7 @@ const homeHero = () => {
             layout="responsive"
             width={1060}
             height={181}
+            alt="Sonoran Image"
             priority
           />
         </div>
