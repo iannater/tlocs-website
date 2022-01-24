@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { FiChevronDown } from "@react-icons/all-files/fi/FiChevronDown";
+
 // import styles from "../styles/Home.module.css";
 
 const Menu = (props) => {
@@ -22,21 +24,21 @@ const Menu = (props) => {
       </div>
       {props.menus.map((menu, index) => (
         <div key={index} className="flex flex-col md:odd:items-end">
-          <div className="bg-redBg text-white md:py-10 p-5 md:px-10 mb-10 md:w-5/6 md:rounded-md md:drop-shadow-2xl">
+          <div
+            onClick={() => {
+              toggle(index);
+            }}
+            className="bg-redBg text-white md:py-10 p-5 md:px-10 mb-10 md:w-5/6 md:rounded-md md:drop-shadow-2xl"
+          >
             {index % 2 ? (
-              <div className="flex flex-row justify-start ">
+              <div className="flex flex-row justify-start" key={index}>
                 <div className="flex items-center ">
-                  <div
-                    onClick={() => toggle(index)}
-                    key={index}
-                    className="flex justify-center items-center pr-5 md:pr-10"
-                  >
-                    <Image
-                      src="/images/down-arrow.png"
-                      alt="arrow"
-                      width={50}
-                      height={26}
-                    />
+                  <div className="flex justify-center items-center pr-1 md:pr-5">
+                    {clicked === index ? (
+                      <FiChevronDown className="w-14 h-10 text-[#F1E8DC] rotate-90" />
+                    ) : (
+                      <FiChevronDown className="w-14 h-10 text-[#F1E8DC]" />
+                    )}
                   </div>
                 </div>
                 <h1 className="font-nmr text-4xl md:text-5xl ">
@@ -44,23 +46,18 @@ const Menu = (props) => {
                 </h1>
               </div>
             ) : (
-              <div className="flex flex-row justify-end">
-                <h1 className="font-nmr text-4xl md:text-5xl pb-3">
+              <div className="flex flex-row justify-end" key={index}>
+                <h1 className="font-nmr text-4xl md:text-5xl">
                   {menu.nameOfSection}
                 </h1>
 
                 <div className="flex items-center">
-                  <div
-                    onClick={() => toggle(index)}
-                    key={index}
-                    className="flex justify-center items-center pl-5 md:pl-10"
-                  >
-                    <Image
-                      src="/images/down-arrow.png"
-                      alt="arrow"
-                      width={50}
-                      height={26}
-                    />
+                  <div className="flex justify-center items-center pl-1 md:pl-5">
+                    {clicked === index ? (
+                      <FiChevronDown className="w-14 h-10 text-[#F1E8DC] -rotate-90" />
+                    ) : (
+                      <FiChevronDown className="w-14 h-10 text-[#F1E8DC]" />
+                    )}
                   </div>
                 </div>
               </div>
