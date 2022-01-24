@@ -8,8 +8,8 @@ import Layout from "../components/layout";
 export default function Home({ menus }) {
   return (
     <div>
+      <HomeHero />
       <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
-        <HomeHero />
         <Hotdog />
         <Menu {...menus} />
       </div>
