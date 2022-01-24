@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
           property="og:description"
           content="T-locs website description goes here"
         />
-        <meta property="og:image" content="/thumbnail.png" />
+        <meta property="og:image" content="%PUBLIC_URL%/thumbnail.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
