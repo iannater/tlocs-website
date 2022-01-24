@@ -7,17 +7,17 @@ const info = [
   {
     title: "Fresh Ingredients",
     sub: "We use only the best ingrdients, making sure nothing is ever frozen and served perfect to you.",
-    icon: "/images/phone.png",
+    icon: "/images/chef.jpg",
   },
   {
     title: "World Class Chefs",
     sub: "Professional trained, and at the top of their class. Leave it to Miguel and Zulma to leave you without words.",
-    icon: "/images/email.png",
+    icon: "/images/chef.jpg",
   },
   {
     title: "Attractive Selection",
     sub: "We have something for everyone and all ages. Let us know any restrictions and we will make sure to accomodate.",
-    icon: "/images/address.png",
+    icon: "/images/selection.jpg",
   },
 ];
 
