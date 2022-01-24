@@ -4,12 +4,12 @@ import React from "react";
 const chefs = [
   {
     name: "Miguel",
-    img: "/images/miguel.jpg",
+    img: "/images/miguel.png",
     bio: "Id enim sunt incididunt veniam magna aute elit exercitation incididunt proident minim quis in cillum. Non reprehenderit ex quis officia commodo elit esse velit nisi et duis laboris mollit nulla. Qui et est tempor dolor sit. Qui reprehenderit est pariatur est. Incididunt anim laborum cillum nulla dolore cillum do laboris amet quis sit sint. Id enim sunt incididunt veniam magna aute elit exercitation incididunt proident minim quis in cillum. Non reprehenderit ex quis officia commodo elit esse velit nisi et duis laboris mollit nulla. Qui et est tempor dolor sit. Qui reprehenderit est pariatur est. Incididunt anim laborum cillum nulla dolore cillum do laboris amet quis sit sint.",
   },
   {
     name: "Zulma",
-    img: "/images/zulma.jpg",
+    img: "/images/zulma.png",
     bio: "Id enim sunt incididunt veniam magna aute elit exercitation incididunt proident minim quis in cillum. Non reprehenderit ex quis officia commodo elit esse velit nisi et duis laboris mollit nulla. Qui et est tempor dolor sit. Qui reprehenderit est pariatur est. Incididunt anim laborum cillum nulla dolore cillum do laboris amet quis sit sint. Id enim sunt incididunt veniam magna aute elit exercitation incididunt proident minim quis in cillum. Non reprehenderit ex quis officia commodo elit esse velit nisi et duis laboris mollit nulla. Qui et est tempor dolor sit. Qui reprehenderit est pariatur est. Incididunt anim laborum cillum nulla dolore cillum do laboris amet quis sit sint.",
   },
 ];

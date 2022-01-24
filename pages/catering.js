@@ -7,39 +7,50 @@ const info = [
   {
     title: "Fresh Ingredients",
     sub: "We use only the best ingrdients, making sure nothing is ever frozen and served perfect to you.",
-    icon: "/images/chef.jpg",
+    icon: "/images/tomato.png",
   },
   {
     title: "World Class Chefs",
     sub: "Professional trained, and at the top of their class. Leave it to Miguel and Zulma to leave you without words.",
-    icon: "/images/chef.jpg",
+    icon: "/images/chef.png",
   },
   {
     title: "Attractive Selection",
     sub: "We have something for everyone and all ages. Let us know any restrictions and we will make sure to accomodate.",
-    icon: "/images/selection.jpg",
+    icon: "/images/selection.png",
   },
 ];
 
 const Catering = () => {
   return (
     <div>
-      <div className="pt-20 md:py-20 bg-yellowBg">
-        <div className="px-10 md:px-40 text-center md:text-left">
-          <div className="flex flex-col justify-center md:justify-start md:items-start md:max-w-md">
-            <h2 className="font-nmr font-bold text-2xl">Welcome to</h2>
-            <h1 className="text-[#D9453F] text-5xl font-bold font-nmr pb-2 ">
-              T-Loc&apos;s Catering
-            </h1>
-            <p className="font-semibold pb-5 md:pb-10  ">
-              Want to spread the love and show everyone what a T-Loc&apos;s hot
-              dog is all about? We now cater for any sized party and any event.
-            </p>
-            <div>
-              <button className="bg-[#D9453F] text-[#F1E8DC] rounded-md px-5 py-2 text-lg font-bold font-nmr">
-                Book Now
-              </button>
+      <div className="pt-20 md:py-20 bg-yellowBg bg-cover bg-no-repeat">
+        <div className="px-10 md:px-0 text-center md:text-left grid md:grid-cols-2 ">
+          <div className="md:pl-40 ">
+            <div className="flex flex-col justify-center items-center md:justify-start md:items-start md:max-w-md">
+              <h2 className="font-nmr font-bold text-2xl">Welcome to</h2>
+              <h1 className="text-[#D9453F] text-5xl font-bold font-nmr pb-2 ">
+                T-Loc&apos;s Catering
+              </h1>
+              <p className="font-semibold pb-5 md:pb-10 max-w-xs md:max-w-md ">
+                Want to spread the love and show everyone what a T-Loc&apos;s
+                hot dog is all about? We now cater for any sized party and any
+                event.
+              </p>
+              <div>
+                <button className="bg-[#D9453F] text-[#F1E8DC] rounded-md px-5 py-2 text-lg font-bold font-nmr">
+                  Book Now
+                </button>
+              </div>
             </div>
+          </div>
+          <div className="w-full h-auto hidden md:block">
+            <Image
+              src="/images/half-dog.png"
+              layout="responsive"
+              width={749}
+              height={447}
+            />
           </div>
         </div>
 
