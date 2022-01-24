@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         footer: "url('/images/footer.png')",
         redBg: "url('/images/red-bg.png')",
+        homeBg: "url('/images/home-bg.png')",
         yellowBg: "url('/images/brown-paper-texture-background.png')",
         whiteLogo: "url('/images/white-logo.png')",
         aboutUs: "url('/images/about-us.png')",
@@ -24,6 +25,15 @@ module.exports = {
           redTxt: "#D9453F",
           lightBrown: "#F1E8DC",
         },
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 200ms ease-in-out",
       },
     },
   },
