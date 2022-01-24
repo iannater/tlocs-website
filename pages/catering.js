@@ -48,6 +48,7 @@ const Catering = () => {
             <Image
               src="/images/half-dog.png"
               layout="responsive"
+              alt="half a hotdog"
               width={749}
               height={447}
             />

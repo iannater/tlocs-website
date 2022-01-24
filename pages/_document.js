@@ -11,6 +11,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
             rel="stylesheet"
           />
+          <title>T-locs</title>
         </Head>
         <body>
           <Main />
