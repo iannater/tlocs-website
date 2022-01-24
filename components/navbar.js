@@ -13,7 +13,7 @@ const NavItem = (props) => (
 );
 
 const navbar = () => (
-  <div className="absolute w-full bg-no-repeat bg-cover">
+  <div className="absolute w-full bg-no-repeat bg-cover z-10">
     <nav className="flex justify-between items-center py-4 px-3 md:px-10">
       <div className="flex items-center ">
         <Link href="/">
