@@ -39,7 +39,7 @@ export default function MyApp({ Component, pageProps }) {
           property="twitter:description"
           content="T-locs website description goes here"
         />
-        <meta property="twitter:image" content="" />
+        <meta property="twitter:image" content="%PUBLIC_URL%/thumbnail.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/blklogo.png" />
         {/* Twitter */}
