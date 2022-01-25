@@ -32,7 +32,7 @@ const contact = () => {
                 Let&apos;s Talk
               </h1>
               <p className=" text-lg lg:text-2xl">
-                We-d love to hear from you!
+                We&apos;d love to hear from you!
               </p>
             </div>
             <div className="w-full">

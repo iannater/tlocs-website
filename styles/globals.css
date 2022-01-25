@@ -19,13 +19,13 @@ a {
   box-sizing: border-box;
 }
 
-.heading {
+/* .heading {
   @apply text-center text-6xl font-bold text-red-600;
-}
+} */
 
-.sub {
+/* .sub {
   @apply text-red-600 text-center;
-}
+} */
 
 .border-shadow {
   box-shadow: rgba(0, 0, 0, 0.95) 0px -50px 36px -28px inset;

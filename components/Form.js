@@ -2,8 +2,8 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="md:px-40">
-      <div className="bg-carteringCard md:rounded-lg shadow-lg grid lg:grid-cols-2">
+    <div className="md:px-20 flex justify-center">
+      <div className="bg-carteringCard bg-no-repeat bg-cover md:rounded-lg shadow-lg lg:grid lg:grid-cols-2 max-w-7xl">
         <div className="p-10">
           <div className="pb-4 text-center">
             <h1 className="font-nmr text-4xl font-bold text-nmr-lightBrown">

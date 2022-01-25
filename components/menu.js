@@ -17,7 +17,9 @@ const Menu = (props) => {
   return (
     <div className="py-10">
       <div className="text-center">
-        <h1 className="heading font-nmr">Menu</h1>
+        <h1 className="text-center text-6xl font-bold text-nmr-red  font-nmr">
+          Menu
+        </h1>
         <p className="font-semibold md:text-lg text-nmr-red pb-5 md:pb-20">
           Hot Dogs, Burritos, Tacos y mas Estilo Sonora
         </p>

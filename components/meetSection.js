@@ -20,7 +20,7 @@ const meetSection = () => {
       <div className="text-center">
         <h1 className="text-4xl font-nmr font-bold text-nmr-red pb-10">
           {" "}
-          Meet The Chef&apos;s
+          Meet The Chefs
         </h1>
       </div>
       {chefs.map((chef, i) => (

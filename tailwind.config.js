@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         nmr: ['"Shrikhand"', "cursive"],
+        sans: ["yaldevi", "sans-serif"],
       },
       backgroundImage: {
         footer: "url('/images/footer.png')",

@@ -26,11 +26,11 @@ const homeHero = () => {
         </div>
       </div>
 
-      <div className="z-10 flex flex-col items-center text-nmr-lightBrown pb-5 border-shadow w-full gap-3 absolute bottom-0 ">
+      <div className="z-10 flex flex-col items-center text-nmr-lightBrown pb-5 border-shadow w-full gap-3 absolute bottom-0 font-bold ">
         <h1>Scroll to Discover More</h1>
         <BsChevronDoubleDown className="animate-bounce h-6 w-6" />
       </div>
-      <div className="w-full md:max-w-4xl h-auto absolute bottom-0 z-0 ">
+      <div className="w-full md:max-w-5xl h-auto absolute bottom-0 z-0 ">
         <Image
           src="/images/home-hotdog.png"
           layout="responsive"

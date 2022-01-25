@@ -23,11 +23,13 @@ const about = () => {
             better. Sound like a local by ordering yours "Con Todo".
           </p>
         </div> */}
-      <div className="pb-10 justify-center z-0 ">
+
+      <div className="pb-10 w-full h-auto  z-0 ">
         <Image
           src="/images/about2.png"
           width={1440}
           height={1252}
+          layout="responsive"
           priority
           alt="Image with a map"
         />

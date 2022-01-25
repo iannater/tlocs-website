@@ -73,8 +73,12 @@ const Hotdog = () => {
     <div className="w-full 2xl:container">
       <div className="md:py-10">
         <div className="py-10">
-          <h1 className="heading font-nmr">CON TODO</h1>
-          <p className="sub">Here’s What Makes Our Hotdogs Special:</p>
+          <h1 className="text-center text-6xl font-bold text-nmr-red font-nmr">
+            CON TODO
+          </h1>
+          <p className="text-nmr-red text-center font-bold">
+            Here’s What Makes Our Hotdogs Special:
+          </p>
         </div>
         {/* desktop  */}
         <div className="hidden md:block ">
