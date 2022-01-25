@@ -26,7 +26,10 @@ export default function MyApp({ Component, pageProps }) {
           property="og:description"
           content="T-locs website description goes here"
         />
-        <meta property="og:image" content={`${url}/thumbnail.png`} />
+        <meta
+          property="og:image"
+          content={`https://t-loc-s-website.vercel.app/thumbnail.png`}
+        />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -39,7 +42,10 @@ export default function MyApp({ Component, pageProps }) {
           property="twitter:description"
           content="T-locs website description goes here"
         />
-        <meta property="twitter:image" content={`${url}/thumbnail.png`} />
+        <meta
+          property="twitter:image"
+          content={`https://t-loc-s-website.vercel.app/thumbnail.png`}
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/blklogo.png" />
         {/* Twitter */}
