@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import ContactForm from "../components/ContactForm";
 import Layout2 from "../components/layoutSd";
 
 const info = [
@@ -35,28 +36,7 @@ const contact = () => {
                 We&apos;d love to hear from you!
               </p>
             </div>
-            <div className="w-full">
-              <form className="flex flex-col space-y-4 px-5 md:px-10 w-full">
-                <input
-                  placeholder="name"
-                  className="rounded-md bg-[#F1E8DC] px-2 py-2"
-                ></input>
-                <input
-                  placeholder="email address"
-                  className="rounded-md bg-[#F1E8DC] px-2 py-2"
-                ></input>
-                <textarea
-                  rows="3"
-                  placeholder="type your message here!"
-                  className="rounded-md bg-[#F1E8DC] px-2 py-2"
-                ></textarea>
-                <div className="pt-3 text-center">
-                  <button className="px-10 py-2 bg-nmr-black text-[#F1E8DC] rounded-md text-lg font-bold font-nmr md:w-48">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
+            <ContactForm />
           </div>
           {/* map */}
           <div className="flex">
