@@ -8,11 +8,8 @@ const about = () => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat">
       <AboutHero />
-      {/* <div className="bg-aboutUs min-h-screen bg-no-repeat  bg-auto bg-center  ">
-        {" "}
-      </div> */}
-      {/* <div className="flex justify-end"> */}
-      {/* <div className="absolute z-10 text-white max-w-xl pr-40 pt-10 ">
+      <div className="pb-10 w-full h-auto z-0 static ">
+        {/* <div className="text-nmr-lightBrown font-bold text-xl absolute z-10 right-0 max-w-3xl">
           <h1>These Ain't Your Typical Hotdogs.</h1>
           <p>
             These are Tucson Local hotdogs, hence our name. Originally from the
@@ -23,8 +20,6 @@ const about = () => {
             better. Sound like a local by ordering yours "Con Todo".
           </p>
         </div> */}
-
-      <div className="pb-10 w-full h-auto  z-0 ">
         <Image
           src="/images/about2.png"
           width={1440}
