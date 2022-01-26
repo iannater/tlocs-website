@@ -70,7 +70,7 @@ const Hotdog = () => {
     return;
   });
   return (
-    <div className="w-full 2xl:container">
+    <div className="w-full ">
       <div className="md:py-10">
         <div className="py-10">
           <h1 className="text-center text-6xl font-bold text-nmr-red font-nmr">
@@ -80,14 +80,25 @@ const Hotdog = () => {
             Here’s What Makes Our Hotdogs Special:
           </p>
         </div>
+        <div className="flex justify-center bg-footer bg-cover bg-no-repeat py-10">
+          <div className="w-full max-w-5xl h-auto">
+            <Image
+              src="/images/ingredients.png"
+              alt="ingredients image"
+              layout="responsive"
+              width={1280}
+              height={960}
+            />
+          </div>
+        </div>
         {/* desktop  */}
-        <div className="hidden md:block ">
+        {/* <div className="hidden md:block  ">
           <div className="grid grid-cols-2">
             <div className="z-10">
               <Image
                 src="/images/ingred.png"
-                width="446"
-                height="600"
+                width={446}
+                height={600}
                 layout="responsive"
                 alt="Image of Hotdog"
               />
@@ -112,9 +123,9 @@ const Hotdog = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* mobile */}
-        <div className=" md:hidden ">
+        {/* <div className=" md:hidden ">
           <div className="grid grid-cols-1">
             <div className="z-10">
               <Image
@@ -139,7 +150,7 @@ const Hotdog = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
