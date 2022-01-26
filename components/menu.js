@@ -79,7 +79,15 @@ const Menu = (props) => {
                           ${item.price}
                         </div>
                       </div>
-                      <div className="border-2 border-solid border-white mb-2"></div>
+                      <div className="w-full max-w-7xl h-8">
+                        <Image
+                          src="/images/line.png"
+                          layout="responsive"
+                          height={21}
+                          width={892}
+                          alt="divider"
+                        />
+                      </div>
                       <div>
                         <div scope="row" className="pb-8 font-semibold">
                           {item.description}
