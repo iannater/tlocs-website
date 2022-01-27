@@ -81,57 +81,43 @@ const Hotdog = () => {
               <span className="flex w-14 h-14  relative bottom-40 left-0">
                 <span className="animate-ping absolute inline-flex w-12 h-12 hover:w-14 hover:h-14 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(firstIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
               <span className="flex w-12 h-12 relative bottom-60 left-8">
                 <span className="animate-ping absolute inline-flex w-12 h-12 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(secondIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
               <span className="flex w-12 h-12 relative bottom-64 left-36">
                 <span className="animate-ping absolute inline-flex w-12 h-12 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(thirdIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
               <span className="flex w-12 h-12 relative  bottom-64 left-60">
                 <span className="animate-ping absolute inline-flex w-12 h-12 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(fourthIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
               <span className="flex w-12 h-12 relative  bottom-64 left-80">
                 <span className="animate-ping absolute inline-flex w-12 h-12 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(fithIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
               <span className="flex w-12 h-12 relative  bottom-64 left-96">
                 <span className="animate-ping absolute inline-flex w-12 h-12 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(sixthIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-60 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
               <span className="flex w-12 h-12 relative  bottom-36 left-28">
                 <span className="animate-ping absolute inline-flex w-12 h-12 rounded-full  bg-red-400 opacity-30"></span>
                 <button onClick={() => setResourceType(seventhIng)}>
-                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-40 justify-center items-center font-bold text-xl text-slate-300">
-                    +
-                  </span>
+                  <span className="relative inline-flex rounded-full w-12 h-12 border-4 border-red-800 border-solid bg-red-500 hover:w-14 hover:h-14  bg-opacity-40 justify-center items-center font-bold text-xl text-slate-300"></span>
                 </button>
               </span>
             </div>
