@@ -74,6 +74,7 @@ const Hotdog = () => {
               src="/images/ux-dog.png"
               alt="ingredients image"
               layout="responsive"
+              priority
               width={1235}
               height={534}
             />
