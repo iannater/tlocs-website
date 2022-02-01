@@ -5,13 +5,14 @@ import { BsChevronDoubleDown } from "@react-icons/all-files/bs/BsChevronDoubleDo
 const homeHero = () => {
   return (
     <div className="min-h-screen bg-redBg bg-cover bg-no-repeat flex flex-col justify-center md:justify-start  items-center">
-      {/* <Image src="/images/red-bg.png" layout="fill" priority className="z-0" /> */}
-      <div className="w-full flex flex-col items-center font-nmr font-bold md:absolute md:top-28  z-10 ">
-        <h3 className="text-nmr-lightBrown md:text-xl">
+      <div
+        id="heading"
+        className="w-full flex flex-col items-center font-nmr font-bold md:absolute md:top-28  z-10 "
+      >
+        <h3 className="text-nmr-lightBrown md:text-xl ">
           T-Loc&apos;s World Famous
         </h3>
-        {/* <h1 className=" text-4xl md:text-9xl">SONORAN</h1> */}
-        <div className="py-2 w-full max-w-4xl h-auto  ">
+        <div className="py-2 w-full max-w-4xl h-auto">
           <Image
             src="/images/sonoran.png"
             layout="responsive"
@@ -30,14 +31,16 @@ const homeHero = () => {
         <h1>Scroll to Discover More</h1>
         <BsChevronDoubleDown className="animate-bounce h-6 w-6" />
       </div>
-      <div className="w-full md:max-w-5xl h-auto absolute bottom-0 z-0 ">
+      <div
+        id="element"
+        className="w-full md:max-w-5xl h-auto absolute bottom-0 z-0"
+      >
         <Image
           src="/images/home-hotdog.png"
           layout="responsive"
           width={1235}
           height={507}
           alt="hot dog"
-          // className="bg-blue-300 "
         />
       </div>
     </div>
