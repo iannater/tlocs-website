@@ -16,8 +16,15 @@ export default function Home({ menus }) {
       y: -500,
       opacity: 0,
       ease: "bounce",
+      delay: 1,
     });
-    tl.from("#heading", { duration: 1, y: -100, opacity: 0, stagger: 0.2 });
+    tl.from("#heading", {
+      duration: 1,
+      y: -100,
+      opacity: 0,
+      stagger: 0.2,
+      delay: 1,
+    });
   }, []);
   return (
     <div>
