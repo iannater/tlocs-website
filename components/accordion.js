@@ -3,7 +3,7 @@ import { gsap } from "gsap/dist/gsap";
 import Image from "next/image";
 import { FiChevronDown } from "@react-icons/all-files/fi/FiChevronDown";
 
-const accordion = (props) => {
+const Accordion = (props) => {
   useEffect(() => {
     const list = gsap.utils.toArray(".accordion");
 
@@ -102,4 +102,4 @@ const accordion = (props) => {
   );
 };
 
-export default accordion;
+export default Accordion;
