@@ -16,7 +16,7 @@ const homeHero = () => {
             width={1060}
             height={181}
             alt="Sonoran Image"
-            priority
+            // priority
           />
         </div>
         <div>
