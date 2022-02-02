@@ -11,13 +11,18 @@ import Accordion from "../components/accordion";
 export default function Home({ menus }) {
   useEffect(() => {
     var tl = gsap.timeline();
-    tl.from("#element", { duration: 0.5, y: -100, opacity: 0 });
-    tl.from("#heading", { duration: 0.5, y: -100, opacity: 0 });
+    gsap.from("#element", {
+      duration: 2,
+      y: -500,
+      opacity: 0,
+      ease: "bounce",
+    });
+    tl.from("#heading", { duration: 1, y: -100, opacity: 0, stagger: 0.2 });
   }, []);
   return (
     <div>
       <HomeHero />
-      <Accordion {...menus} />
+
       <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
         <Hotdog />
         <Menu {...menus} />

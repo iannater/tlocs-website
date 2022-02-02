@@ -52,7 +52,7 @@ const Hotdog = () => {
   // USE EFFECT RENDERS THE RESOURCETYPE WHEN IT GETS A NEW VALUE
   // ONCLICK WILL SET THE STATE WITH THE INDEX
   useEffect(() => {
-    console.log(resourceType);
+    // console.log(resourceType);
   }, [resourceType]);
 
   return (
