@@ -17,7 +17,7 @@ const ingredients = [
       "Perfectly diced tomatoes sourced from the best farmeres in Texas",
   },
   {
-    title: "Onions",
+    title: "Minced Onions",
     description:
       "Perfectly diced onions sourced from the best farmeres in Texas",
   },
