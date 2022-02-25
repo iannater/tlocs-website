@@ -15,7 +15,7 @@ const chefs = [
   {
     name: "Miguel and Zulma",
     img: "/images/together.png",
-    bio: "	After years of working in the hotel and restaurant business, Miguel and Zulma gained the knowledge, skills and confidence to begin their own culinary journey and move to Austin, TX. T-Loc’s Sonora Hotdogs was born in 2016 as an effort to share the unique local cuisine from the place where it all began - Tucson.  Together, Zulma and Miguel have explored 23 countries celebrating what they love most: food, travel and culture. “We are blue collar people who earn for the work that we put in and  believe that we are true professionals with ambition to spread love through the food we serve.”",
+    bio: "After years of working in the hotel and restaurant business, Miguel and Zulma gained the knowledge, skills and confidence to begin their own culinary journey and move to Austin, TX. T-Loc’s Sonora Hotdogs was born in 2016 as an effort to share the unique local cuisine from the place where it all began - Tucson. Together, Zulma and Miguel have explored 23 countries celebrating what they love most: food, travel and culture. “We are blue collar people who earn for the work that we put in and  believe that we are true professionals with ambition to spread love through the food we serve.”",
   },
 ];
 
@@ -30,7 +30,7 @@ const meetSection = () => {
       {chefs.map((chef, i) => (
         <div
           key={chef.name}
-          className="md:pb-10 flex justify-center flex-col align-middle space-y-10"
+          className="md:pb-10 flex justify-center flex-col align-middle space-y-10 pb-10"
         >
           {/* pic */}
           <div className="flex justify-center">
@@ -38,7 +38,7 @@ const meetSection = () => {
           </div>
           {/* content */}
           <div className="flex justify-center">
-            <div className="bg-redBg md:rounded-md md:max-w-5xl text-white p-10 flex justify-center flex-col items-center">
+            <div className="bg-redBg md:bg-cardBg md:rounded-md md:max-w-5xl text-white p-10 flex justify-center flex-col items-center">
               <h1 className="pb-5 font-nmr text-2xl lg:text-3xl font-bold">
                 {chef.name}
               </h1>

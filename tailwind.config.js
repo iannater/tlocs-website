@@ -19,6 +19,7 @@ module.exports = {
         dog: "url('/images/dog.png')",
         carteringCard: "url('/images/catering-card.png')",
         halfDog: "url('/images/half-dog.png')",
+        cardBg: "url('/images/card-bg.png')",
       },
       colors: {
         nmr: {
