@@ -3,38 +3,38 @@ import React, { useRef, useEffect, useState } from "react";
 
 const ingredients = [
   {
-    title: "first",
-    description: "its a bun",
+    title: "Bacon Wrapped Hot Dog",
+    description:
+      "Perfectly grilled hot dog of your choice wrapped in premium bacon.",
   },
   {
-    title: "Condiments",
+    title: "Caramalized Onions",
     description:
-      "This trio of jalapeno sauce, mustard, and mayo combines for the perfect dressing.",
-  },
-  {
-    title: "Tomatoes",
-    description:
-      "Perfectly diced tomatoes sourced from the best farmeres in Texas",
+      "Expertly caramalized onions that add a sweet flavor to the dog.",
   },
   {
     title: "Minced Onions",
     description:
-      "Perfectly diced onions sourced from the best farmeres in Texas",
+      "Perfectly diced onions sourced from the best farmers in Texas.",
   },
   {
-    title: "Becon Wrapped Hot Dog!",
+    title: "Condiments",
     description:
-      "Perfectly diced tomatoes sourced from the best farmeres in Texas",
+      "This trio of jalapeño sauce, mustard, and mayo combines for the perfect dressing.",
+  },
+  {
+    title: "Tomatoes",
+    description:
+      "Perfectly diced tomatoes sourced from the best farmers in Texas.",
+  },
+  {
+    title: "Pinto Beans",
+    description:
+      "Fresh Pinto beans made every morning, packed with flavor and protein.",
   },
   {
     title: "Steamed Bun",
-    description:
-      "Perfectly diced tomatoes sourced from the best farmeres in Texas",
-  },
-  {
-    title: "last",
-    description:
-      "Perfectly diced tomatoes sourced from the best farmeres in Texas",
+    description: "Imported from Tucson, it’s a bun as authentic as it comes.",
   },
 ];
 
