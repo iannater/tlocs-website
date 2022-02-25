@@ -15,7 +15,7 @@ const chefs = [
   {
     name: "Miguel and Zulma",
     img: "/images/together.png",
-    bio: "After years of working in the hotel and restaurant business, Miguel and Zulma gained the knowledge, skills and confidence to begin their own culinary journey and move to Austin, TX. T-Loc’s Sonora Hotdogs was born in 2016 as an effort to share the unique local cuisine from the place where it all began - Tucson. Together, Zulma and Miguel have explored 23 countries celebrating what they love most: food, travel and culture. “We are blue collar people who earn for the work that we put in and  believe that we are true professionals with ambition to spread love through the food we serve.”",
+    bio: "After years of working in the hotel and restaurant business, Miguel and Zulma gained the knowledge, skills and confidence to begin their own culinary journey and move to Austin, TX. T-Loc’s Sonora Hotdogs was born in 2016 as an effort to share the unique local cuisine from the place where it all began - Tucson.  Together, Zulma and Miguel have explored 23 countries celebrating what they love most: food, travel and culture. “We are blue collar people who earn for the work that we put in and  believe that we are true professionals with ambition to spread love through the food we serve.”",
   },
 ];
 
