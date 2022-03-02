@@ -1,9 +1,7 @@
-import ReactPlayer from "react-player";
 import React, { useState } from "react";
 import Image from "next/image";
 import CModal from "../components/modal";
 import Modal from "react-modal";
-import { BsArrowRight } from "react-icons/bs";
 
 const aboutHero = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);

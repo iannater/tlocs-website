@@ -53,12 +53,14 @@ const footer = () => {
             <div className="text-nmr-red pt-3 flex">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.instagram.com/tlocssonorahotdogs/"
               >
                 <AiOutlineInstagram className="h-8 w-8" />
               </a>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=100063692522844"
               >
                 <AiFillFacebook className="h-8 w-8" />
