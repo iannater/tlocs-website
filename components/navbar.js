@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavItem = (props) => (
   <li>
     <a
-      className="md:text-lg font-bold text-white px-2 py-1 hover:bg-red-900 rounded transition-colors duration-300"
+      className="md:text-lg font-bold text-nmr-lightBrown px-2 py-1 hover:bg-red-900 rounded transition-colors duration-300"
       href={props.href}
     >
       {props.text}
@@ -27,10 +27,15 @@ const navbar = () => (
           <NavItem href="/about" text="About" />
           <NavItem href="/catering" text="Catering" />
           <NavItem href="/contact" text="Contact" />
-          <NavItem
-            href="https://tlocs-hotdogs-103892-107872.square.site"
-            text="Order Now"
-          />
+
+          <li>
+            <a
+              className=" bg-[#333333] md:text-lg font-bold text-nmr-lightBrown px-3 py-2 hover:bg-nmr-lightBrown hover:text-[#333333] rounded transition-colors duration-300"
+              href="https://tlocs-hotdogs-103892-107872.square.site"
+            >
+              ORDER NOW
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

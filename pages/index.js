@@ -30,7 +30,7 @@ export default function Home({ menus }) {
 
       <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
         <Hotdog />
-        <Menu {...menus} />
+        {/* <Menu {...menus} /> */}
       </div>
     </div>
   );

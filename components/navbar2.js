@@ -27,6 +27,14 @@ const navbar = () => (
           <NavItem href="/about" text="About" />
           <NavItem href="/catering" text="Catering" />
           <NavItem href="/contact" text="Contact" />
+          <li>
+            <a
+              className=" bg-[#333333] md:text-lg font-bold text-nmr-lightBrown px-3 py-2 hover:bg-nmr-lightBrown hover:text-[#333333] rounded transition-colors duration-300"
+              href="https://tlocs-hotdogs-103892-107872.square.site"
+            >
+              ORDER NOW
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
