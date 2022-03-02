@@ -6,7 +6,7 @@ import Layout2 from "../components/layoutSd";
 const info = [
   {
     title: "Phone",
-    sub: "(XXX) XXX - XXXX",
+    sub: "(512) 994-8982",
     icon: "/images/phone.png",
   },
   {

@@ -37,7 +37,7 @@ const footer = () => {
             <h1 className="text-red-600 font-bold pb-5">Hours:</h1>
             <h1 className="text-white font-bold pb-10">Monday: Closed</h1>
             <h1 className="text-red-600 font-bold pb-1">Contact #</h1>
-            <h1 className="text-white font-bold">+1 (***) 758 5260</h1>
+            <h1 className="text-white font-bold">+1 (512) 994-8982</h1>
           </div>
           <div className="">
             <h1 className="text-red-600 font-bold pb-5">Our Home</h1>
@@ -51,9 +51,18 @@ const footer = () => {
               Follow our journey on social channels
             </p>
             <div className="text-nmr-red pt-3 flex">
-              <AiOutlineInstagram className="h-8 w-8" />
-              <AiFillFacebook className="h-8 w-8" />
-              <AiOutlineTwitter className="h-8 w-8" />
+              <a
+                target="_blank"
+                href="https://www.instagram.com/tlocssonorahotdogs/"
+              >
+                <AiOutlineInstagram className="h-8 w-8" />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100063692522844"
+              >
+                <AiFillFacebook className="h-8 w-8" />
+              </a>
             </div>
           </div>
           <div className="">
