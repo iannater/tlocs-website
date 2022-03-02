@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavItem = (props) => (
   <li>
     <a
-      className="md:text-lg font-bold text-nmr-lightBrown px-2 py-1 hover:bg-red-900 rounded transition-colors duration-300"
+      className="text-xs px-1 md:text-lg font-bold text-nmr-lightBrown px-2 py-1 hover:bg-red-900 rounded transition-colors duration-300"
       href={props.href}
     >
       {props.text}
@@ -13,7 +13,7 @@ const NavItem = (props) => (
 );
 
 const navbar = () => (
-  <div className="absolute w-full bg-no-repeat bg-cover z-10">
+  <div className="absolute w-full bg-no-repeat bg-cover z-10 px-2">
     <nav className="flex justify-between items-center py-4 px-3 md:px-10">
       <div className="flex items-center ">
         <Link href="/">
@@ -30,7 +30,7 @@ const navbar = () => (
 
           <li>
             <a
-              className=" bg-[#333333] md:text-lg font-bold text-nmr-lightBrown px-3 py-2 hover:bg-nmr-lightBrown hover:text-[#333333] rounded transition-colors duration-300"
+              className="text-xs px-1 bg-[#333333] md:text-lg font-bold text-nmr-lightBrown md:px-3 py-2 hover:bg-nmr-lightBrown hover:text-[#333333] rounded transition-colors duration-300"
               href="https://tlocs-hotdogs-103892-107872.square.site"
             >
               ORDER NOW

@@ -14,8 +14,7 @@ const ingredients = [
   },
   {
     title: "Minced Onions",
-    description:
-      "Perfectly diced onions sourced from the best farmers in Texas.",
+    description: "Perfectly diced onions.",
   },
   {
     title: "Condiments",
@@ -24,8 +23,7 @@ const ingredients = [
   },
   {
     title: "Tomatoes",
-    description:
-      "Perfectly diced tomatoes sourced from the best farmers in Texas.",
+    description: "Perfectly diced tomatoes.",
   },
   {
     title: "Pinto Beans",
