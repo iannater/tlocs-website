@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavItem = (props) => (
   <li>
     <a
-      className="text-xs px-1 md:text-lg font-bold text-nmr-lightBrown px-2 py-1 hover:bg-red-900 rounded transition-colors duration-300"
+      className="text-xs px-1 md:text-lg font-bold text-nmr-lightBrown py-1 hover:bg-red-900 rounded transition-colors duration-300"
       href={props.href}
     >
       {props.text}
