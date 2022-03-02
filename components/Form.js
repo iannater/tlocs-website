@@ -95,7 +95,7 @@ const Form = () => {
               Thinking of Catering?
             </h1>
           </div>
-          <form className="text-center" onSubmit={handleSubmit}>
+          <form id="form" className="text-center" onSubmit={handleSubmit}>
             <div className="w-full space-y-5 p-2 md:py-5 md:px-10">
               <input
                 name="fullname"

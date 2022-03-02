@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Layout2 from "../components/layoutSd";
 import Form from "../components/Form";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const info = [
   {
@@ -38,11 +39,11 @@ const Catering = () => {
                 event.
               </p>
               <div>
-                <a href="/contact">
+                <Link activeClass="active" to="form" spy={true}>
                   <button className="bg-[#D9453F] text-[#F1E8DC] rounded-md px-5 py-2 text-lg font-bold font-nmr">
                     Book Now
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
