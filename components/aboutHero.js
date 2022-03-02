@@ -3,7 +3,7 @@ import Image from "next/image";
 import CModal from "../components/modal";
 import Modal from "react-modal";
 
-const aboutHero = ({ children }) => {
+const AboutHero = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal(value) {
@@ -37,4 +37,4 @@ const aboutHero = ({ children }) => {
   );
 };
 
-export default aboutHero;
+export default AboutHero;
