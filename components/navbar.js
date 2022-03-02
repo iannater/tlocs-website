@@ -27,6 +27,10 @@ const navbar = () => (
           <NavItem href="/about" text="About" />
           <NavItem href="/catering" text="Catering" />
           <NavItem href="/contact" text="Contact" />
+          <NavItem
+            href="https://tlocs-hotdogs-103892-107872.square.site"
+            text="Order Now"
+          />
         </ul>
       </div>
     </nav>
