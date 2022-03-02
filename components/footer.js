@@ -34,8 +34,8 @@ const footer = () => {
         <div className="col-span-4 hidden md:flex justify-between py-5 px-10 ">
           {" "}
           <div className="">
-            <h1 className="text-red-600 font-bold pb-5">Hours:</h1>
-            <h1 className="text-white font-bold pb-10">Monday: Closed</h1>
+            {/* <h1 className="text-red-600 font-bold pb-5">Hours:</h1> */}
+            {/* <h1 className="text-white font-bold pb-10">Monday: Closed</h1> */}
             <h1 className="text-red-600 font-bold pb-1">Contact #</h1>
             <h1 className="text-white font-bold">+1 (512) 994-8982</h1>
           </div>
