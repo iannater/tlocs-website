@@ -90,12 +90,12 @@ const Form = () => {
     <div className="md:px-20 flex justify-center">
       <div className="bg-carteringCard bg-no-repeat bg-cover md:rounded-lg shadow-lg lg:grid lg:grid-cols-2 max-w-7xl">
         <div className="p-10">
-          <div className="pb-4 text-center">
+          <div id="form" className="pb-4 text-center">
             <h1 className="font-nmr text-4xl font-bold text-nmr-lightBrown">
               Thinking of Catering?
             </h1>
           </div>
-          <form id="form" className="text-center" onSubmit={handleSubmit}>
+          <form className="text-center" onSubmit={handleSubmit}>
             <div className="w-full space-y-5 p-2 md:py-5 md:px-10">
               <input
                 name="fullname"
