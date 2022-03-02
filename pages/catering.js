@@ -38,9 +38,11 @@ const Catering = () => {
                 event.
               </p>
               <div>
-                <button className="bg-[#D9453F] text-[#F1E8DC] rounded-md px-5 py-2 text-lg font-bold font-nmr">
-                  Book Now
-                </button>
+                <a href="/contact">
+                  <button className="bg-[#D9453F] text-[#F1E8DC] rounded-md px-5 py-2 text-lg font-bold font-nmr">
+                    Book Now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
