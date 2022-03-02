@@ -68,9 +68,9 @@ const footer = () => {
             </div>
           </div>
           <div className="">
-            <h1 className="text-red-600 font-bold pb-5">
+            {/* <h1 className="text-red-600 font-bold pb-5">
               Nowhere to go but up
-            </h1>
+            </h1> */}
             <p className="text-white font-bold">Privacy</p>
           </div>
         </div>
