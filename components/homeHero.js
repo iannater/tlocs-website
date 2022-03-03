@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { BsChevronDoubleDown } from "@react-icons/all-files/bs/BsChevronDoubleDown";
 
-const homeHero = () => {
+const HomeHero = () => {
   useEffect(() => {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
@@ -54,4 +54,4 @@ const homeHero = () => {
   );
 };
 
-export default homeHero;
+export default HomeHero;
