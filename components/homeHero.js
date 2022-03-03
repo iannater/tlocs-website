@@ -4,7 +4,7 @@ import { BsChevronDoubleDown } from "@react-icons/all-files/bs/BsChevronDoubleDo
 
 const homeHero = () => {
   return (
-    <div className="h-screen bg-redBg bg-cover bg-no-repeat flex flex-col justify-center md:justify-start  items-center">
+    <div className="inset-0 h-screen bg-redBg bg-cover bg-no-repeat flex flex-col justify-center md:justify-start  items-center">
       <div className="w-full flex flex-col items-center font-nmr font-bold md:absolute md:top-28  z-10 ">
         <h3 id="heading" className="text-nmr-lightBrown md:text-xl ">
           T-Loc&apos;s World Famous
