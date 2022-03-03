@@ -46,8 +46,8 @@ const contact = () => {
         {/* icons */}
         <div className="grid md:grid-cols-3 px-14 py-20 md:text-center max-w-6xl w-full">
           {info.map((items, i) => (
-            <div key={i} className="grid grid-cols-2  md:grid-cols-1">
-              <div className="flex justify-center items-center md:block">
+            <div key={i} className="grid grid-cols-2 md:grid-cols-1">
+              <div className="flex justify-center items-center md:block pb-3">
                 <Image
                   src={items.icon}
                   alt="phone icon"
