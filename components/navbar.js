@@ -18,14 +18,14 @@ const navbar = () => (
       <div className="flex items-center ">
         <Link href="/">
           <a>
-            <Image src="/white-logo.png" alt="Logo" width={69} height={69} />{" "}
+            <Image src="/white-logo.png" alt="Logo" width={69} height={69} />
           </a>
         </Link>
       </div>
       <div>
         <ul className="flex space-x-2 font-nmr">
           <NavItem href="/about" text="About" />
-          <NavItem href="/catering" text="Catering" />
+          {/* <NavItem href="/catering" text="Catering" /> */}
           <NavItem href="/contact" text="Contact" />
 
           <li>
