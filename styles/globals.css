@@ -30,3 +30,7 @@ a {
 .border-shadow {
   box-shadow: rgba(0, 0, 0, 0.95) 0px -50px 36px -28px inset;
 }
+
+.mobile {
+  height: calc(var(--vh, 1vh) * 100);
+}
