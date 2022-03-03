@@ -25,7 +25,7 @@ const navbar = () => (
       <div>
         <ul className="flex space-x-2 font-nmr">
           <NavItem href="/about" text="About" />
-          <NavItem href="/catering" text="Catering" />
+          {/* <NavItem href="/catering" text="Catering" /> */}
           <NavItem href="/contact" text="Contact" />
 
           <li>
