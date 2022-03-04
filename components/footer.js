@@ -32,14 +32,27 @@ const footer = () => {
           </a>
         </div>
         <div className="col-span-4 hidden md:flex justify-between py-5 px-10 ">
-          {" "}
           <div className="">
-            {/* <h1 className="text-red-600 font-bold pb-5">Hours:</h1> */}
-            {/* <h1 className="text-white font-bold pb-10">Monday: Closed</h1> */}
-            <h1 className="text-red-600 font-bold pb-1">Contact #</h1>
-            <h1 className="text-white font-bold">+1 (512) 994-8982</h1>
+            <h1 className="text-red-600 font-bold pb-5">Hours:</h1>
+            <h1 className="text-white font-bold ">
+              Friday 11am-3pm , 5:30-9pm
+            </h1>
+            <h1 className="text-white font-bold ">Saturday 11am-9pm </h1>
+            <h1 className="text-white font-bold ">Sunday Closed </h1>
+            <h1 className="text-white font-bold ">Monday Closed </h1>
+            <h1 className="text-white font-bold ">
+              Tuesday 11am-3pm , 5:30-8pm
+            </h1>
+            <h1 className="text-white font-bold ">
+              Wednesday 11am-3pm , 5:30-8pm
+            </h1>
+            <h1 className="text-white font-bold ">
+              Thursday 11am-3pm , 5:30-9pm
+            </h1>
           </div>
           <div className="">
+            <h1 className="text-red-600 font-bold pb-5">Contact #</h1>
+            <h1 className="text-white font-bold pb-5">+1 (512) 994-8982</h1>
             <h1 className="text-red-600 font-bold pb-5">Our Home</h1>
             <p className="text-white font-bold w-36">
               5000 Burnet Rd, Austin, TX 78756
