@@ -3,11 +3,13 @@ import React from "react";
 import AboutHero from "../components/aboutHero";
 import Layout from "../components/layout";
 import MeetSection from "../components/meetSection";
+import ImageSlider from "../components/imageSlider";
 
 const about = () => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat">
       <AboutHero />
+      <ImageSlider />
       <div className="pb-10 w-full h-auto z-0 static ">
         {/* <div className="text-nmr-lightBrown font-bold text-xl absolute z-10 right-0 max-w-3xl">
           <h1>These Ain't Your Typical Hotdogs.</h1>
