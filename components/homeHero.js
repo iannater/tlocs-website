@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { BsChevronDoubleDown } from "@react-icons/all-files/bs/BsChevronDoubleDown";
 
-const HomeHero = () => {
+const HomeHero = (props) => {
   useEffect(() => {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
@@ -15,7 +15,7 @@ const HomeHero = () => {
     <div className="mobile h-screen bg-redBg bg-cover bg-no-repeat flex flex-col justify-center md:justify-start  items-center">
       <div className="w-full flex flex-col items-center font-nmr font-bold md:absolute md:top-28  z-10 ">
         <h3 id="heading" className="text-nmr-lightBrown md:text-xl ">
-          T-Loc&apos;s World Famous
+          {props.homePages[0].topTitle}
         </h3>
         <div id="heading" className="py-2 w-full max-w-4xl h-auto">
           <Image
@@ -29,7 +29,7 @@ const HomeHero = () => {
         </div>
         <div>
           <h2 id="heading" className="text-nmr-lightBrown text-xl md:text-5xl">
-            HOT DOGS
+            {props.homePages[0].bottomTitle}
           </h2>
         </div>
       </div>
