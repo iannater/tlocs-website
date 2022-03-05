@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useRef, useEffect, useState } from "react";
 
 const Hotdog = (props) => {
-  console.log(props.hotdogs[0].ingredients);
   // SEETTING STATE TO THE LAST ELEMENT IN THE DATA
   const [resourceType, setResourceType] = useState(
     props.hotdogs[0].ingredients[6]
