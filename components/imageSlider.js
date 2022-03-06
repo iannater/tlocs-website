@@ -4,7 +4,8 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
+  console.log(props);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -23,15 +24,17 @@ const ImageSlider = () => {
         ref={sliderRef}
         className=" keen-slider bg-redBg md:rounded-md relative "
       >
-        <div className="keen-slider__slide flex justify-center align-middle py-10 px-14">
-          <Image
-            src="/images/product.jpg"
-            width="898px"
-            height="598px"
-            alt="product"
-          />
-        </div>
-        <div className="keen-slider__slide flex justify-center align-middle py-10 px-14">
+        {props.aboutPg.aboutPages[0].sliders.map((img, i) => (
+          <div className="keen-slider__slide flex justify-center align-middle py-10 px-14">
+            <Image
+              src={`${img.sliderImg.url}`}
+              width="898px"
+              height="598px"
+              alt="product"
+            />
+          </div>
+        ))}
+        {/* <div className="keen-slider__slide flex justify-center align-middle py-10 px-14">
           <Image
             src="/images/product-two.jpg"
             width="898px"
@@ -46,7 +49,7 @@ const ImageSlider = () => {
             height="598px"
             alt="product"
           />
-        </div>
+        </div> */}
         {loaded && instanceRef.current && (
           <>
             <Arrow
