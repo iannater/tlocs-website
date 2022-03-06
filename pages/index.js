@@ -1,12 +1,12 @@
 import Hotdog from "../components/hotdog";
-import Menu from "../components/menu";
+// import Menu from "../components/menu";
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
 import HomeHero from "../components/homeHero";
 import Layout from "../components/layout";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
-import Accordion from "../components/accordion";
+// import Accordion from "../components/accordion";
 
 export default function Home({ homePg }) {
   useEffect(() => {
