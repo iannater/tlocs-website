@@ -35,19 +35,19 @@ const footer = () => {
           <div className="">
             <h1 className="text-red-600 font-bold pb-5">Hours:</h1>
             <h1 className="text-white font-bold ">
-              Friday 11am-3pm , 5:30-9pm
+              Friday: 11am-3pm , 5:30-9pm
             </h1>
-            <h1 className="text-white font-bold ">Saturday 11am-9pm </h1>
-            <h1 className="text-white font-bold ">Sunday Closed </h1>
-            <h1 className="text-white font-bold ">Monday Closed </h1>
+            <h1 className="text-white font-bold ">Saturday: 11am-9pm </h1>
+            <h1 className="text-white font-bold ">Sunday: 11am-3pm </h1>
+            <h1 className="text-white font-bold ">Monday: Closed </h1>
             <h1 className="text-white font-bold ">
-              Tuesday 11am-3pm , 5:30-8pm
-            </h1>
-            <h1 className="text-white font-bold ">
-              Wednesday 11am-3pm , 5:30-8pm
+              Tuesday: 11am-3pm , 5:30-8pm
             </h1>
             <h1 className="text-white font-bold ">
-              Thursday 11am-3pm , 5:30-9pm
+              Wednesday: 11am-3pm , 5:30-8pm
+            </h1>
+            <h1 className="text-white font-bold ">
+              Thursday: 11am-3pm , 5:30-9pm
             </h1>
           </div>
           <div className="">
