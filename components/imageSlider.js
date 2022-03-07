@@ -24,7 +24,10 @@ const ImageSlider = (props) => {
         className=" keen-slider bg-redBg md:rounded-md relative "
       >
         {props.aboutPg.aboutPages[0].sliders.map((img, i) => (
-          <div className="keen-slider__slide flex justify-center align-middle py-10 px-14">
+          <div
+            key={i}
+            className="keen-slider__slide flex justify-center align-middle py-10 px-14"
+          >
             <Image
               src={`${img.sliderImg.url}`}
               width="898px"
