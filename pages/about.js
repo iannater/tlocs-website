@@ -11,6 +11,11 @@ const about = (aboutPg) => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat">
       <AboutHero {...aboutPg} />
+      <div className="pt-10">
+        <h1 className="text-center text-6xl font-bold text-nmr-red font-nmr">
+          Photo Gallery
+        </h1>
+      </div>
       <ImageSlider {...aboutPg} />
       <div className="pb-10 w-full h-auto z-0 static ">
         {/* <div className="text-nmr-lightBrown font-bold text-xl absolute z-10 right-0 max-w-3xl">
