@@ -6,6 +6,7 @@ import HomeHero from "../components/homeHero";
 import Layout from "../components/layout";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
+import Hours from "../components/Hours";
 // import Accordion from "../components/accordion";
 
 export default function Home({ homePg }) {
@@ -30,7 +31,7 @@ export default function Home({ homePg }) {
 
       <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
         <Hotdog {...homePg} />
-        {/* <Menu {...menus} /> */}
+        <Hours />
       </div>
     </div>
   );
