@@ -13,7 +13,7 @@ const HomeHero = (props) => {
 
   return (
     <div className="mobile h-screen bg-redBg bg-cover bg-no-repeat flex flex-col justify-center md:justify-start  items-center">
-      <div className="w-full flex flex-col items-center font-nmr font-bold md:absolute md:top-28  z-10 ">
+      <div className="w-full flex flex-col items-center font-nmr font-bold md:absolute md:top-28  ">
         <h3 id="heading" className="text-nmr-lightBrown md:text-xl ">
           {props.homePages[0].topTitle}
         </h3>
