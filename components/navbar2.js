@@ -11,7 +11,7 @@ const NavItem = (props) => (
   </a>
 );
 
-const navbar = () => {
+const Navbar = () => {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -74,4 +74,4 @@ const navbar = () => {
     </div>
   );
 };
-export default navbar;
+export default Navbar;
