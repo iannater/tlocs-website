@@ -4,7 +4,7 @@ import React from "react";
 const meetSection = (props) => {
   // console.log(props.aboutPg.aboutPages[0].chefs);
   return (
-    <div className="md:p-20">
+    <div className="md:p-20 md:pt-0 md:pb-0">
       <div className="text-center">
         <h1 className="text-4xl font-nmr font-bold text-nmr-red pb-10">
           {props.aboutPg.aboutPages[0].meetSection}

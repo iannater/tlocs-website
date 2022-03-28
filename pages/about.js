@@ -6,13 +6,14 @@ import MeetSection from "../components/meetSection";
 import ImageSlider from "../components/imageSlider";
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
+import Hours from "../components/Hours";
 
 const about = (aboutPg) => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat">
       <AboutHero {...aboutPg} />
-      <div className="pt-10">
-        <h1 className="text-center text-6xl font-bold text-nmr-red font-nmr">
+      <div className=" pt-10 pb-5 md:pt-20 md:pb-0">
+        <h1 className="text-center text-4xl font-bold text-nmr-red font-nmr">
           Photo Gallery
         </h1>
       </div>
@@ -40,6 +41,7 @@ const about = (aboutPg) => {
       </div>
       {/* </div> */}
       <MeetSection {...aboutPg} />
+      <Hours />
     </div>
   );
 };
