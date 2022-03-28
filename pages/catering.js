@@ -3,6 +3,7 @@ import Image from "next/image";
 import Layout2 from "../components/layoutSd";
 import Form from "../components/Form";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Hours from "../components/Hours";
 
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
@@ -84,6 +85,7 @@ const Catering = (cateringtPg) => {
           ))}
         </div>
         <Form />
+        <Hours />
       </div>
     </div>
   );

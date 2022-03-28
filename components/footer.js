@@ -64,10 +64,8 @@ const footer = () => {
             </div>
           </div>
           <div className="">
-            {/* <h1 className="text-red-600 font-bold pb-5">
-              Nowhere to go but up
-            </h1> */}
-            <p className="text-white font-bold">Privacy</p>
+            <h1 className="text-red-600 font-bold pb-5">Privacy</h1>
+            {/* <p className="text-white font-bold">Privacy</p> */}
           </div>
         </div>
         <div className="md:hidden flex justify-between items-center ">

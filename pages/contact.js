@@ -3,6 +3,7 @@ import ContactForm from "../components/ContactForm";
 import Layout2 from "../components/layoutSd";
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
+import Hours from "../components/Hours";
 
 const info = [
   {
@@ -45,7 +46,7 @@ const contact = (contactPg) => {
           </div>
         </div>
         {/* icons */}
-        <div className="grid md:grid-cols-3 px-14 py-20 md:text-center max-w-6xl w-full">
+        <div className="grid md:grid-cols-3 px-14 pt-10 md:pt-20 pb-5 md:pb-10 md:text-center max-w-6xl w-full">
           {contactPg.contactPg.contactPages[0].icons.map((items, i) => (
             <div key={i} className="grid grid-cols-2 md:grid-cols-1">
               <div className="flex justify-center items-center md:block pb-3">
@@ -67,6 +68,7 @@ const contact = (contactPg) => {
           ))}
         </div>
       </div>
+      <Hours />
     </div>
   );
 };
