@@ -1,52 +1,19 @@
 import Image from "next/image";
 import React, { useRef, useEffect, useState } from "react";
 
-const ingredients = [
-  {
-    title: "Bacon Wrapped Hot Dog",
-    description:
-      "Perfectly grilled hot dog of your choice wrapped in premium bacon.",
-  },
-  {
-    title: "Caramalized Onions",
-    description:
-      "Expertly caramalized onions that add a sweet flavor to the dog.",
-  },
-  {
-    title: "Minced Onions",
-    description: "Perfectly diced onions.",
-  },
-  {
-    title: "Condiments",
-    description:
-      "This trio of jalapeño sauce, mustard, and mayo combines for the perfect dressing.",
-  },
-  {
-    title: "Tomatoes",
-    description: "Perfectly diced tomatoes.",
-  },
-  {
-    title: "Pinto Beans",
-    description:
-      "Fresh Pinto beans made every morning, packed with flavor and protein.",
-  },
-  {
-    title: "Steamed Bun",
-    description: "Imported from Tucson, it’s a bun as authentic as it comes.",
-  },
-];
-
-const Hotdog = () => {
+const Hotdog = (props) => {
   // SEETTING STATE TO THE LAST ELEMENT IN THE DATA
-  const [resourceType, setResourceType] = useState(ingredients[6]);
+  const [resourceType, setResourceType] = useState(
+    props.hotdogs[0].ingredients[6]
+  );
   // SEETTING EACH INDEX OF THE INGREDIENTS ARRAY TO CALL WHEN RESOURCES GET SET
-  const firstIng = ingredients[0];
-  const secondIng = ingredients[1];
-  const thirdIng = ingredients[2];
-  const fourthIng = ingredients[3];
-  const fithIng = ingredients[4];
-  const sixthIng = ingredients[5];
-  const seventhIng = ingredients[6];
+  const firstIng = props.hotdogs[0].ingredients[0];
+  const secondIng = props.hotdogs[0].ingredients[1];
+  const thirdIng = props.hotdogs[0].ingredients[2];
+  const fourthIng = props.hotdogs[0].ingredients[3];
+  const fithIng = props.hotdogs[0].ingredients[4];
+  const sixthIng = props.hotdogs[0].ingredients[5];
+  const seventhIng = props.hotdogs[0].ingredients[6];
   // USE EFFECT RENDERS THE RESOURCETYPE WHEN IT GETS A NEW VALUE
   // ONCLICK WILL SET THE STATE WITH THE INDEX
   useEffect(() => {
@@ -59,10 +26,10 @@ const Hotdog = () => {
         {/* title */}
         <div className="py-10">
           <h1 className="text-center text-6xl font-bold text-nmr-red font-nmr">
-            CON TODO
+            {props.homePages[0].hotdogTitle}
           </h1>
           <p className="text-nmr-red text-center font-bold">
-            Here’s What Makes Our Hotdogs Special:
+            {props.homePages[0].hotdogSubtitle}
           </p>
         </div>
         {/* desktop */}
@@ -126,7 +93,7 @@ const Hotdog = () => {
             className="text-center text-nmr-lightBrown bg-redBg max-w-2xl w-full p-10 rounded-md mt-10"
             id="first"
           >
-            <h1 className="font-nmr text-4xl">{resourceType.title}</h1>
+            <h1 className="font-nmr text-4xl">{resourceType.name}</h1>
             <h1 className="font-semibold text-lg">
               {resourceType.description}
             </h1>
@@ -141,6 +108,7 @@ const Hotdog = () => {
               layout="responsive"
               width={1280}
               height={960}
+              quality="100"
             />
           </div>
         </div>

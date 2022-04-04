@@ -3,6 +3,10 @@ import Image from "next/image";
 import Layout2 from "../components/layoutSd";
 import Form from "../components/Form";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Hours from "../components/Hours";
+
+import { gql } from "@apollo/client";
+import client from "../apolloClient";
 
 const info = [
   {
@@ -22,21 +26,23 @@ const info = [
   },
 ];
 
-const Catering = () => {
+const Catering = (cateringtPg) => {
+  // console.log(cateringtPg.cateringtPg.cateringPages[0]);
   return (
     <div>
       <div className="pt-20 md:py-20 bg-yellowBg bg-cover bg-no-repeat">
         <div className="px-10 md:px-0 text-center md:text-left grid md:grid-cols-2 ">
           <div className="md:pl-40 ">
             <div className="flex flex-col justify-center items-center md:justify-start md:items-start md:max-w-md">
-              <h2 className="font-nmr font-bold text-2xl">Welcome to</h2>
+              <h2 className="font-nmr font-bold text-2xl">
+                {cateringtPg.cateringtPg.cateringPages[0].topSubTitle}
+              </h2>
               <h1 className="text-[#D9453F] text-5xl font-bold font-nmr pb-2 ">
-                T-Loc&apos;s Catering
+                {cateringtPg.cateringtPg.cateringPages[0].title}
               </h1>
               <p className="font-semibold pb-5 md:pb-10 max-w-xs md:max-w-md ">
-                Want to spread the love and show everyone what a T-Loc&apos;s
-                hot dog is all about? We now cater for any sized party and any
-                event.
+                {" "}
+                {cateringtPg.cateringtPg.cateringPages[0].description}
               </p>
               <div>
                 <Link activeClass="active" to="form" spy={true}>
@@ -59,11 +65,11 @@ const Catering = () => {
         </div>
 
         <div className="grid md:grid-cols-3 text-center py-20 px-10 md:px-40 gap-6 md:gap-4">
-          {info.map((items, i) => (
+          {cateringtPg.cateringtPg.cateringPages[0].cards.map((item, i) => (
             <div key={i} className="flex flex-col items-center">
               <div className="pb-4">
                 <Image
-                  src={items.icon}
+                  src={item.icon.url}
                   alt="phone icon"
                   width={59}
                   height={59}
@@ -71,18 +77,50 @@ const Catering = () => {
               </div>
               <div className="max-w-xs">
                 <h1 className="font-nmr text-3xl sm:text-2xl lg:text-3xl text-nmr-redTxt">
-                  {items.title}
+                  {item.title}
                 </h1>
-                <h2 className="font-semibold">{items.sub}</h2>
+                <h2 className="font-semibold">{item.description}</h2>
               </div>
             </div>
           ))}
         </div>
         <Form />
+        <Hours />
       </div>
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const { data: cateringtPg } = await client
+    .query({
+      query: gql`
+        query {
+          cateringPages {
+            description
+            title
+            topSubtitle
+            cards {
+              description
+              title
+              icon {
+                url
+              }
+            }
+          }
+        }
+      `,
+    })
+    .catch((err) => {
+      return { cateringtPg: "There was an error!" };
+    });
+  // console.log(menus);
+  return {
+    props: {
+      cateringtPg,
+    },
+  };
+}
 
 Catering.Layout = Layout2;
 

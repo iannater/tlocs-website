@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { AiFillFacebook } from "@react-icons/all-files/ai/AiFillFacebook";
 import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram";
-import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 
 const NavItem = (props) => (
   <li>
@@ -33,26 +32,10 @@ const footer = () => {
         </div>
         <div className="col-span-4 hidden md:flex justify-between py-5 px-10 ">
           <div className="">
-            <h1 className="text-red-600 font-bold pb-5">Hours:</h1>
-            <h1 className="text-white font-bold ">
-              Friday 11am-3pm , 5:30-9pm
-            </h1>
-            <h1 className="text-white font-bold ">Saturday 11am-9pm </h1>
-            <h1 className="text-white font-bold ">Sunday Closed </h1>
-            <h1 className="text-white font-bold ">Monday Closed </h1>
-            <h1 className="text-white font-bold ">
-              Tuesday 11am-3pm , 5:30-8pm
-            </h1>
-            <h1 className="text-white font-bold ">
-              Wednesday 11am-3pm , 5:30-8pm
-            </h1>
-            <h1 className="text-white font-bold ">
-              Thursday 11am-3pm , 5:30-9pm
-            </h1>
-          </div>
-          <div className="">
             <h1 className="text-red-600 font-bold pb-5">Contact #</h1>
             <h1 className="text-white font-bold pb-5">+1 (512) 994-8982</h1>
+          </div>
+          <div>
             <h1 className="text-red-600 font-bold pb-5">Our Home</h1>
             <p className="text-white font-bold w-36">
               5000 Burnet Rd, Austin, TX 78756
@@ -81,10 +64,8 @@ const footer = () => {
             </div>
           </div>
           <div className="">
-            {/* <h1 className="text-red-600 font-bold pb-5">
-              Nowhere to go but up
-            </h1> */}
-            <p className="text-white font-bold">Privacy</p>
+            <h1 className="text-red-600 font-bold pb-5">Privacy</h1>
+            {/* <p className="text-white font-bold">Privacy</p> */}
           </div>
         </div>
         <div className="md:hidden flex justify-between items-center ">

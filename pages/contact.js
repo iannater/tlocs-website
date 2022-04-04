@@ -1,7 +1,9 @@
 import Image from "next/image";
-import React, { useState } from "react";
 import ContactForm from "../components/ContactForm";
 import Layout2 from "../components/layoutSd";
+import { gql } from "@apollo/client";
+import client from "../apolloClient";
+import Hours from "../components/Hours";
 
 const info = [
   {
@@ -21,7 +23,7 @@ const info = [
   },
 ];
 
-const contact = () => {
+const contact = (contactPg) => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat min-h-screen">
       <div className="flex flex-col px-5 items-center">
@@ -30,10 +32,10 @@ const contact = () => {
           <div className="bg-redBg flex flex-col rounded-md lg:rounded-l-md lg:rounded-r-none py-5 md:py-10 justify-center items-center mb-5 md:mb-0">
             <div className="text-[#F1E8DC] text-center pb-5 lg:pb-10">
               <h1 className=" text-4xl lg:text-6xl font-nmr">
-                Let&apos;s Talk
+                {contactPg.contactPg.contactPages[0].title}
               </h1>
               <p className=" text-lg lg:text-2xl">
-                We&apos;d love to hear from you!
+                {contactPg.contactPg.contactPages[0].subTitle}
               </p>
             </div>
             <ContactForm />
@@ -44,12 +46,12 @@ const contact = () => {
           </div>
         </div>
         {/* icons */}
-        <div className="grid md:grid-cols-3 px-14 py-20 md:text-center max-w-6xl w-full">
-          {info.map((items, i) => (
+        <div className="grid md:grid-cols-3 px-14 pt-10 md:pt-20 pb-5 md:pb-10 md:text-center max-w-6xl w-full">
+          {contactPg.contactPg.contactPages[0].icons.map((items, i) => (
             <div key={i} className="grid grid-cols-2 md:grid-cols-1">
               <div className="flex justify-center items-center md:block pb-3">
                 <Image
-                  src={items.icon}
+                  src={items.icon.url}
                   alt="phone icon"
                   width={59}
                   height={59}
@@ -60,15 +62,46 @@ const contact = () => {
                 <h1 className="font-nmr font-bold text-lg lg:text-3xl text-nmr-black">
                   {items.title}
                 </h1>
-                <h2 className="text-nmr-red font-semibold">{items.sub}</h2>
+                <h2 className="text-nmr-red font-semibold">{items.subTitle}</h2>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <Hours />
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const { data: contactPg } = await client
+    .query({
+      query: gql`
+        query {
+          contactPages {
+            subTitle
+            title
+            icons {
+              subTitle
+              title
+              icon {
+                url
+              }
+            }
+          }
+        }
+      `,
+    })
+    .catch((err) => {
+      return { contactPg: "There was an error!" };
+    });
+  // console.log(menus);
+  return {
+    props: {
+      contactPg,
+    },
+  };
+}
 
 contact.Layout = Layout2;
 

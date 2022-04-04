@@ -1,5 +1,6 @@
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
+import { useState } from "react";
 
 const NavItem = (props) => (
   <a
@@ -9,9 +10,6 @@ const NavItem = (props) => (
     {props.text}
   </a>
 );
-/*  ./components/Navbar.jsx     */
-import Link from "next/link";
-import { useState } from "react";
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -21,14 +19,14 @@ export const Navbar = () => {
   };
 
   return (
-    <>
-      <nav className="flex items-center flex-wrap gap-4  p-3 absolute w-full bg-no-repeat bg-cover z-10 px-3 ">
+    <div>
+      <nav className="flex items-center flex-wrap gap-4  md:p-3 absolute w-full bg-no-repeat bg-cover z-10 md:px-3 ">
         <Link href="/">
-          <a>
+          <a className="p-3 md:p-0">
             <Image src="/white-logo.png" alt="Logo" width={69} height={69} />
           </a>
         </Link>
-        <div className="ml-auto flex items-center ">
+        <div className="ml-auto flex items-center p-3 md:p-0 gap-2">
           <a
             className="md:hidden text-xs px-1 bg-[#333333] md:text-lg font-bold text-nmr-lightBrown md:px-3 py-2 hover:bg-nmr-lightBrown hover:text-[#333333] rounded transition-colors duration-300"
             href="https://tlocs-hotdogs-103892-107872.square.site"
@@ -59,8 +57,8 @@ export const Navbar = () => {
 
         <div
           className={`${
-            active ? "" : "hidden"
-          }   w-full md:inline-flex md:flex-grow md:w-auto `}
+            active ? "bg-nmr-black md:bg-transparent p-5 md:p-0" : "hidden"
+          }   w-full md:inline-flex md:flex-grow md:w-auto`}
         >
           <div className="md:inline-flex md:flex-row md:ml-auto md:w-auto w-full gap-3 md:items-center items-start flex flex-col md:h-auto">
             <NavItem href="/about" text="About" />
@@ -75,7 +73,7 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
