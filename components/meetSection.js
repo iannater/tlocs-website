@@ -2,15 +2,15 @@ import Image from "next/image";
 import React from "react";
 
 const meetSection = (props) => {
-  // console.log(props.aboutPg.aboutPages[0].chefs);
+  // console.log(props.aboutPages[0].chefs);
   return (
     <div className="md:p-20 md:pt-0 md:pb-0">
       <div className="text-center">
         <h1 className="text-4xl font-nmr font-bold text-nmr-red pb-10">
-          {props.aboutPg.aboutPages[0].meetSection}
+          {props.aboutPages[0].meetSection}
         </h1>
       </div>
-      {props.aboutPg.aboutPages[0].chefs.map((chef, i) => (
+      {props.aboutPages[0].chefs.map((chef, i) => (
         <div
           key={chef.name}
           className="md:pb-10 flex justify-center flex-col align-middle space-y-10 pb-10"

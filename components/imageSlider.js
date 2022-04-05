@@ -23,7 +23,7 @@ const ImageSlider = (props) => {
         ref={sliderRef}
         className=" keen-slider bg-redBg md:rounded-md relative "
       >
-        {props.aboutPg.aboutPages[0].sliders.map((img, i) => (
+        {props.aboutPages[0].sliders.map((img, i) => (
           <div
             key={i}
             className="keen-slider__slide flex justify-center align-middle py-10 px-14"

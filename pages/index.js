@@ -31,7 +31,7 @@ export default function Home({ homePg }) {
 
       <div className="bg-yellowBg bg-no-repeat bg-cover min-h-screen">
         <Hotdog {...homePg} />
-        <Hours />
+        <Hours {...homePg} />
       </div>
     </div>
   );
@@ -54,6 +54,10 @@ export async function getStaticProps() {
               name
               description
             }
+          }
+          hours {
+            day
+            hours
           }
         }
       `,

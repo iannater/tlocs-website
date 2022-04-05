@@ -1,5 +1,7 @@
 import React from "react";
-const Hours = () => {
+
+const Hours = (props) => {
+  console.log(props);
   return (
     <div className="flex justify-center align-middle p-5 md:p-10">
       <div className="bg-footer w-full rounded-xl max-w-3xl py-10 px-5">
@@ -9,30 +11,30 @@ const Hours = () => {
         <div className="grid grid-cols-2 text-center text-nmr-lightBrown md:text-2xl ">
           <div>
             <div className="pb-5">
-              <h1 className="font-bold"> Friday </h1>
-              <h1 className="font-medium">11am-3pm , 5:30-9pm</h1>
+              <h1 className="font-bold"> {props.hours[0].day} </h1>
+              <h1 className="font-medium">{props.hours[0].hours}</h1>
             </div>
             <div className="pb-5">
-              <h1 className="font-bold"> Saturday </h1>
-              <h1 className="font-medium"> 11am-9pm </h1>
+              <h1 className="font-bold"> {props.hours[1].day} </h1>
+              <h1 className="font-medium"> {props.hours[1].hours} </h1>
             </div>
             <div className="pb-5">
-              <h1 className="font-bold"> Sunday</h1>
-              <h1 className="font-medium"> 11am-3pm </h1>
+              <h1 className="font-bold"> {props.hours[2].day}</h1>
+              <h1 className="font-medium">{props.hours[2].hours} </h1>
             </div>
           </div>
           <div>
             <div className="pb-5">
-              <h1 className="font-bold"> Monday</h1>
-              <h1 className="font-medium">Closed </h1>
+              <h1 className="font-bold"> {props.hours[3].day}</h1>
+              <h1 className="font-medium">{props.hours[3].hours} </h1>
             </div>
             <div className="pb-5">
-              <h1 className="font-bold"> Tuesday & Wednesday</h1>
-              <h1 className="font-medium">11am-3pm , 5:30-8pm</h1>
+              <h1 className="font-bold"> {props.hours[4].day}</h1>
+              <h1 className="font-medium">{props.hours[4].hours}</h1>
             </div>
             <div className="pb-5">
-              <h1 className="font-bold"> Thursday</h1>
-              <h1 className="font-medium">11am-3pm , 5:30-9pm</h1>
+              <h1 className="font-bold"> {props.hours[5].day}</h1>
+              <h1 className="font-medium">{props.hours[5].hours}</h1>
             </div>
           </div>
         </div>

@@ -13,10 +13,10 @@ const AboutHero = (props) => {
     <div className="md:p-20 py-20 md:min-h-screen flex flex-col items-center bg-redBg bg-cover bg-no-repeat">
       <div className="md:p-10 text-center font-bold text-nmr-lightBrown pb-5">
         <h2 className="md:text-2xl pb-5 font-nmr">
-          {props.aboutPg.aboutPages[0].topTitle}
+          {props.aboutPages[0].topTitle}
         </h2>
         <h1 className="text-5xl md:text-7xl font-nmr">
-          {props.aboutPg.aboutPages[0].title}
+          {props.aboutPages[0].title}
         </h1>
       </div>
       <div

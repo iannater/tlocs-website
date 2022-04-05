@@ -26,7 +26,7 @@ const info = [
   },
 ];
 
-const Catering = (cateringtPg) => {
+const Catering = ({ cateringtPg }) => {
   // console.log(cateringtPg.cateringtPg.cateringPages[0]);
   return (
     <div>
@@ -35,14 +35,14 @@ const Catering = (cateringtPg) => {
           <div className="md:pl-40 ">
             <div className="flex flex-col justify-center items-center md:justify-start md:items-start md:max-w-md">
               <h2 className="font-nmr font-bold text-2xl">
-                {cateringtPg.cateringtPg.cateringPages[0].topSubTitle}
+                {cateringtPg.cateringPages[0].topSubTitle}
               </h2>
               <h1 className="text-[#D9453F] text-5xl font-bold font-nmr pb-2 ">
-                {cateringtPg.cateringtPg.cateringPages[0].title}
+                {cateringtPg.cateringPages[0].title}
               </h1>
               <p className="font-semibold pb-5 md:pb-10 max-w-xs md:max-w-md ">
                 {" "}
-                {cateringtPg.cateringtPg.cateringPages[0].description}
+                {cateringtPg.cateringPages[0].description}
               </p>
               <div>
                 <Link activeClass="active" to="form" spy={true}>
@@ -65,7 +65,7 @@ const Catering = (cateringtPg) => {
         </div>
 
         <div className="grid md:grid-cols-3 text-center py-20 px-10 md:px-40 gap-6 md:gap-4">
-          {cateringtPg.cateringtPg.cateringPages[0].cards.map((item, i) => (
+          {cateringtPg.cateringPages[0].cards.map((item, i) => (
             <div key={i} className="flex flex-col items-center">
               <div className="pb-4">
                 <Image
@@ -85,7 +85,7 @@ const Catering = (cateringtPg) => {
           ))}
         </div>
         <Form />
-        <Hours />
+        <Hours {...cateringtPg} />
       </div>
     </div>
   );
@@ -107,6 +107,10 @@ export async function getStaticProps() {
                 url
               }
             }
+          }
+          hours {
+            day
+            hours
           }
         }
       `,

@@ -8,7 +8,7 @@ import { gql } from "@apollo/client";
 import client from "../apolloClient";
 import Hours from "../components/Hours";
 
-const about = (aboutPg) => {
+const about = ({ aboutPg }) => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat">
       <AboutHero {...aboutPg} />
@@ -19,17 +19,6 @@ const about = (aboutPg) => {
       </div>
       <ImageSlider {...aboutPg} />
       <div className="pb-10 w-full h-auto z-0 static ">
-        {/* <div className="text-nmr-lightBrown font-bold text-xl absolute z-10 right-0 max-w-3xl">
-          <h1>These Ain't Your Typical Hotdogs.</h1>
-          <p>
-            These are Tucson Local hotdogs, hence our name. Originally from the
-            state of Sonora, MX, they are now part of the Arizona food culture.
-            We believe everyone should try them, so we brought them to Austin.
-            Our food is so authentic, that we fly our buns all the way from
-            Tucson weekly. They look like little gold bars and they taste even
-            better. Sound like a local by ordering yours "Con Todo".
-          </p>
-        </div> */}
         <Image
           src="/images/about2.png"
           width={1440}
@@ -41,7 +30,7 @@ const about = (aboutPg) => {
       </div>
       {/* </div> */}
       <MeetSection {...aboutPg} />
-      <Hours />
+      <Hours {...aboutPg} />
     </div>
   );
 };
@@ -67,6 +56,10 @@ export async function getStaticProps() {
                 url
               }
             }
+          }
+          hours {
+            day
+            hours
           }
         }
       `,

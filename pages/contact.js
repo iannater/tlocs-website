@@ -23,7 +23,7 @@ const info = [
   },
 ];
 
-const contact = (contactPg) => {
+const contact = ({ contactPg }) => {
   return (
     <div className="bg-yellowBg bg-cover bg-no-repeat min-h-screen">
       <div className="flex flex-col px-5 items-center">
@@ -32,10 +32,10 @@ const contact = (contactPg) => {
           <div className="bg-redBg flex flex-col rounded-md lg:rounded-l-md lg:rounded-r-none py-5 md:py-10 justify-center items-center mb-5 md:mb-0">
             <div className="text-[#F1E8DC] text-center pb-5 lg:pb-10">
               <h1 className=" text-4xl lg:text-6xl font-nmr">
-                {contactPg.contactPg.contactPages[0].title}
+                {contactPg.contactPages[0].title}
               </h1>
               <p className=" text-lg lg:text-2xl">
-                {contactPg.contactPg.contactPages[0].subTitle}
+                {contactPg.contactPages[0].subTitle}
               </p>
             </div>
             <ContactForm />
@@ -47,7 +47,7 @@ const contact = (contactPg) => {
         </div>
         {/* icons */}
         <div className="grid md:grid-cols-3 px-14 pt-10 md:pt-20 pb-5 md:pb-10 md:text-center max-w-6xl w-full">
-          {contactPg.contactPg.contactPages[0].icons.map((items, i) => (
+          {contactPg.contactPages[0].icons.map((items, i) => (
             <div key={i} className="grid grid-cols-2 md:grid-cols-1">
               <div className="flex justify-center items-center md:block pb-3">
                 <Image
@@ -68,7 +68,7 @@ const contact = (contactPg) => {
           ))}
         </div>
       </div>
-      <Hours />
+      <Hours {...contactPg} />
     </div>
   );
 };
@@ -88,6 +88,10 @@ export async function getStaticProps() {
                 url
               }
             }
+          }
+          hours {
+            day
+            hours
           }
         }
       `,
