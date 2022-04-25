@@ -149,7 +149,7 @@ const ContactForm = () => {
 			<div className="text-left pl-3">
 				{showSuccessMessage && (
 					<p className="text-white font-bold text-lg my-2">
-						Thank you! Your Message has been delivered.
+						Thank you! Your message has been delivered.
 					</p>
 				)}
 				{showFailureMessage && (
