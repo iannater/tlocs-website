@@ -79,10 +79,10 @@ const ContactForm = () => {
 			setButtonText("Send");
 		}
 		console.log(fullname, email, subject, message);
-		email.value = "";
-		fullname.value = "";
-		subject.value = "";
-		message.value = "";
+		setEmail("");
+		setFullname("");
+		setSubject("");
+		setMessage("");
 	};
 
 	return (
